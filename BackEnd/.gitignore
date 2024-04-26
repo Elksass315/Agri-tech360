@@ -4,5 +4,5 @@ env
 __pycache__
 public
 /models/plants_data
-.idea
+
 .DS_Store

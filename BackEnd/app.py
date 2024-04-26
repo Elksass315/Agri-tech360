@@ -3,19 +3,18 @@ from flask import Flask, jsonify, send_from_directory
 import os
 from dotenv import load_dotenv
 from flask_swagger_ui import get_swaggerui_blueprint
-
+from flask_cors import CORS
 # Import needed controllers
 from controllers.chatBot_controller import chatBot_controller
 from controllers.comment_controllers import create_comment, delete_comment, get_comments
 from controllers.favorites_controllers import add_favorites, delete_favorites, get_user_fav_products
 from controllers.shop_controllers import add_product_to_shop
-from controllers.crop_controllers import recommend_crop
+from controllers.soil_controllers import recommend_crop
 from controllers.weather_controller import get_weather
 from controllers.user_controllers import register, login, get_user_data, update_user_data, update_password
 from controllers.model_controller import classify_image
 
 # import the database models
-from models.chatHistory import create_history_table
 from models.comments import create_comments_table
 from models.favorites import create_favorites_table
 from models.plants import create_plants_table, get_all_plants, get_plant_by_name, insert_plants_data_from_json
@@ -40,6 +39,7 @@ swagger_ui_blueprint = get_swaggerui_blueprint(
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 # Create the Database Tables before running the app
 conn = create_connection()
@@ -48,7 +48,6 @@ create_plants_table(conn)
 create_products_table(conn)
 create_comments_table(conn)
 create_favorites_table(conn)
-create_history_table(conn)
 insert_plants_data_from_json('models/plants_data/data.json')
 
 # Main app endpoints
@@ -168,7 +167,7 @@ def soil_classify_api(email): return recommend_crop()
 
 @app.route('/chat', methods=["POST"])
 @auth_token
-def chatBot_api(email): return chatBot_controller(email)
+def chatBot_api(email): return chatBot_controller()
 
 
 app.register_blueprint(swagger_ui_blueprint, url_prefix=SWAGGER_URL)

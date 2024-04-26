@@ -11,7 +11,7 @@ def get_weather(email):
     '''Function to get weather data for the city of the user'''
     try:
         api_key = os.getenv('OPEN_WEATHER_API_KEY')
-        city = get_user_by_email(email)[4]
+        city = get_user_by_email(email)[3]
 
         if not city:
             return jsonify(
