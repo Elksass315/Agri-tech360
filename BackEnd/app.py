@@ -9,7 +9,7 @@ from controllers.chatBot_controller import chatBot_controller
 from controllers.comment_controllers import create_comment, delete_comment, get_comments
 from controllers.favorites_controllers import add_favorites, delete_favorites, get_user_fav_products
 from controllers.shop_controllers import add_product_to_shop
-from controllers.crop_controllers import recommend_crop
+from controllers.soil_controllers import recommend_crop
 from controllers.weather_controller import get_weather
 from controllers.user_controllers import register, login, get_user_data, update_user_data, update_password
 from controllers.model_controller import classify_image

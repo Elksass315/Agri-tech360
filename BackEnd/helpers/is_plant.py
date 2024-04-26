@@ -8,13 +8,12 @@ load_dotenv()
 def is_plant(photo):
     '''Function to check if the image is a plant or not'''
     try:
-        url = f"https://my-api.plantnet.org/v2/identify/all?include-related-images=false&no-reject=false&lang=en&api-key={os.getenv('PLANT_API_KEY')}"
-        
-        files = [('images', ('file', open(photo, 'rb'), 'image/png'))]
-        
-        response = requests.request("POST", url, files=files, data={})
-        if response.status_code == 200:
-            return True
+        url = "https://plant.id/api/v3/identification?language=en"
+        files = {'image': open(photo, 'rb')}
+        response = requests.post(url, files=files, headers={'Api-Key': os.getenv('PLANT_ID_API_KEY')})
+        data = response.json()
+        if response.status_code == 201:
+            return data['result']["is_plant"]["binary"]
         else:
             return False
     except Exception as e:
