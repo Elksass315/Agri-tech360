@@ -1,0 +1,52 @@
+:root {
+  --dark-green: #2c6455;
+  --light-green: #63b68e;
+  --white: #fff;
+  --orange: #fa8966;
+  --gray: #718096;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--light-green);
+  cursor: grab;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: orange;
+  cursor: grab;
+}
+
+span {
+  color: var(--light-green);
+}
+::selection {
+  background-color: var(--orange);
+  color: var(--white);
+}

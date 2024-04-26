@@ -1,0 +1,23 @@
+# -- stackhawk configuration for Agri-tech360 --
+app:
+  # -- An applicationId obtained from the StackHawk platform. --
+  applicationId: 4a652c3e-33f9-41ca-b740-ea2d4866a7e3 # (required)
+  # -- The environment for the applicationId defined in the StackHawk platform. --
+  env: Development # (required)
+  # -- The url of your application to scan --
+  host: http://localhost:8000 # (required)
+
+  # -- Customized Configuration for GraphQL/SOAP/OpenAPI, add here --
+  openApiConf:
+    # path: /swagger # OR...
+      filePath: /Users/sherifshaaban/Downloads/Programing/Agri-tech360/static/swagger.json
+  autoPolicy: true
+  autoInputVectors: true
+  # Configuration Docs: https://docs.stackhawk.com/hawkscan/configuration/
+# -- If Authenticated Scanning is needed, add here --
+# Authenticated Scanning Docs: https://docs.stackhawk.com/hawkscan/authenticated-scanning.html
+# Authenticated Scanning Repo: https://github.com/kaakaww/scan-configuration/tree/main/Authentication
+
+# -- Help Section --
+# Docs: https://docs.stackhawk.com/
+# Contact Support: support@stackhawk.com

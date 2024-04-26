@@ -1,0 +1,46 @@
+{
+    "result": [
+        {
+            "minCelsius": 13.1,
+            "maxCelsius": 23.3,
+            "date": "2023-12-25",
+            "icon": "https://cdn.weatherapi.com/weather/64x64/day/113.png"
+        },
+        {
+            "minCelsius": 12.5,
+            "maxCelsius": 23.9,
+            "date": "2023-12-26",
+            "icon": "https://cdn.weatherapi.com/weather/64x64/day/113.png"
+        },
+        {
+            "minCelsius": 13,
+            "maxCelsius": 22.8,
+            "date": "2023-12-27",
+            "icon": "https://cdn.weatherapi.com/weather/64x64/day/176.png"
+        },
+        {
+            "minCelsius": 13.6,
+            "maxCelsius": 23.4,
+            "date": "2023-12-28",
+            "icon": "https://cdn.weatherapi.com/weather/64x64/day/176.png"
+        },
+        {
+            "minCelsius": 12.5,
+            "maxCelsius": 23.7,
+            "date": "2023-12-29",
+            "icon": "https://cdn.weatherapi.com/weather/64x64/day/113.png"
+        },
+        {
+            "minCelsius": 13,
+            "maxCelsius": 24.2,
+            "date": "2023-12-30",
+            "icon": "https://cdn.weatherapi.com/weather/64x64/day/113.png"
+        },
+        {
+            "minCelsius": 12,
+            "maxCelsius": 23.4,
+            "date": "2023-12-31",
+            "icon": "https://cdn.weatherapi.com/weather/64x64/day/116.png"
+        }
+    ]
+}

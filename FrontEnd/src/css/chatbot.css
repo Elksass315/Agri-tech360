@@ -1,0 +1,123 @@
+/* library.css */
+.chat-bot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+.chat-button img {
+  width: 40px;
+  padding-top: 5px;
+}
+.chat-button {
+  background-color: #4caf4f97;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.chat-header {
+  background: linear-gradient(90deg, #ebb461, #fa8966);
+  border-radius: 8px 8px 0 0;
+  color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message-user {
+  background-color: #fa8966;
+  color: var(--white);
+  text-indent: 15px;
+  padding: 3px 15px 3px 0;
+  border-radius: 100px 80px 80px 0px;
+  max-width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.message-bot {
+  background-color: var(--light-green);
+  color: var(--white);
+  border-radius: 80px 100px 0px 80px;
+  margin-top: 10px;
+  width: 60%;
+  position: relative;
+  right: -70px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  padding: 26px;
+  height: fit-content;
+}
+
+.input-form {
+  display: flex;
+  padding: 10px;
+  width: 85%;
+}
+
+.input-form input {
+  flex: 1;
+  padding: 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #dddddd77;
+  border-radius: 20px;
+  text-indent: 15px;
+}
+
+.input-form button {
+  position: absolute;
+  right: -7px;
+  bottom: 1px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: transparent;
+}
+.chat-header span {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.arrow-icon {
+  width: 35px;
+  background-color: #dddddd77;
+  border-radius: 100px 100px 0px 100px;
+  transition: 0.4s ease-in;
+}
+.arrow-icon:hover {
+  background-color: green;
+}

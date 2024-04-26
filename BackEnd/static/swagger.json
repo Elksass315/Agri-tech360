@@ -1,0 +1,1332 @@
+{
+  "swagger": "2.0",
+  "securityDefinitions": {
+    "BearerAuth": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "Enter your bearer token in the format 'Bearer {token}'"
+    }
+  },
+  "info": {
+    "title": "Agri-tech 360 API",
+    "version": "1.10.0"
+  },
+  "paths": {
+    "/register": {
+      "post": {
+        "tags": ["User"],
+        "description": "Register a new user",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "fullName",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "email",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "password",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "city",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "phoneNumber",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "profilePic",
+            "type": "file",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User registered successfully",
+            "schema": {
+              "$ref": "#/definitions/registerSuccess"
+            }
+          },
+          "400": {
+            "description": "User already exists",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "tags": ["User"],
+        "description": "Login a user",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "email",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "password",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User logged in successfully",
+            "schema": {
+              "$ref": "#/definitions/loginSuccess"
+            }
+          },
+          "401": {
+            "description": "Invalid credentials",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/user-data": {
+      "get": {
+        "tags": ["User"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "description": "Get user data",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "User data fetched successfully",
+            "schema": {
+              "$ref": "#/definitions/userData"
+            }
+          },
+          "404": {
+            "description": "User not found",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/update-user-data": {
+      "put": {
+        "tags": ["User"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "description": "Update user data",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "fullName",
+            "type": "string",
+            "required": false
+          },
+          {
+            "in": "formData",
+            "name": "city",
+            "type": "string",
+            "required": false
+          },
+          {
+            "in": "formData",
+            "name": "phoneNumber",
+            "type": "string",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User data updated successfully",
+            "schema": {
+              "$ref": "#/definitions/updatedUserData"
+            }
+          },
+          "404": {
+            "description": "User not found",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/update-password": {
+      "put": {
+        "tags": ["User"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "description": "Update user password",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "old_password",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "new_password",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Password updated successfully",
+            "schema": {
+              "$ref": "#/definitions/updatedPassword"
+            }
+          },
+          "404": {
+            "description": "User not found",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/get-weather": {
+      "get": {
+        "tags": ["Weather"],
+        "description": "Get weather data",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Weather data fetched successfully",
+            "schema": {
+              "$ref": "#/definitions/weatherData"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/plants": {
+      "get": {
+        "tags": ["Plants"],
+        "description": "Get plants data",
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Plants data fetched successfully",
+            "schema": {
+              "$ref": "#/definitions/plantsData"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "404": {
+            "description": "No plants found",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/plants/{plant_name}": {
+      "get": {
+        "tags": ["Plants"],
+        "description": "Get plants data",
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "plant_name",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Plants data fetched successfully",
+            "schema": {
+              "$ref": "#/definitions/plantData"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "404": {
+            "description": "No plants found",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/uploads/{section}/{photo_name}": {
+      "get": {
+        "tags": ["Uploads"],
+        "description": "Get requested photo",
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "section",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "photo_name",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Photo fetched successfully"
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/classify": {
+      "post": {
+        "tags": ["Models"],
+        "description": "Classify image",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "file",
+            "type": "file",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Image classified successfully",
+            "schema": {
+              "$ref": "#/definitions/classifiedImage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/comments/create": {
+      "post": {
+        "tags": ["Comments"],
+        "description": "Create comment",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "comment",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "product",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Comment created successfully",
+            "schema": {
+              "$ref": "#/definitions/comment"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/comments/{product}": {
+      "get": {
+        "tags": ["Comments"],
+        "description": "Get comments",
+        "consumes": ["multipart/form-data"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "product",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Comments fetched successfully",
+            "schema": {
+              "$ref": "#/definitions/comment"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/comments": {
+      "delete": {
+        "tags": ["Comments"],
+        "description": "Delete comment",
+        "consumes": ["multipart/form-data"],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "comment_id",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Comment deleted successfully",
+            "schema": {
+              "$ref": "#/definitions/deletedComment"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "404": {
+            "description": "Comment not found",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/add-favorites": {
+      "post": {
+        "tags": ["Favorites"],
+        "description": "Add favorite",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "product",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Favorite added successfully",
+            "schema": {
+              "$ref": "#/definitions/addedFavorite"
+            },
+            "401": {
+              "description": "Unauthorized",
+              "schema": {
+                "$ref": "#/definitions/failedRequest"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/favorites": {
+      "get": {
+        "tags": ["Favorites"],
+        "description": "Get favorites",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Favorites fetched successfully",
+            "schema": {
+              "$ref": "#/definitions/addedFavorite"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "404": {
+            "description": "Favorites not found",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/remove-favorites": {
+      "delete": {
+        "tags": ["Favorites"],
+        "description": "Delete favorite",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "product",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Favorite deleted successfully",
+            "schema": {
+              "$ref": "#/definitions/deletedFavorite"
+            },
+            "401": {
+              "description": "Unauthorized",
+              "schema": {
+                "$ref": "#/definitions/failedRequest"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          },
+          "404": {
+            "description": "Favorite not found",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    },
+    "/recommend-crop": {
+      "post": {
+        "tags": ["Models"],
+        "description": "Recommend crop",
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "previous_crop",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "file",
+            "type": "file",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Crop recommended successfully",
+            "schema": {
+              "$ref": "#/definitions/recommendedCrop"
+            },
+            "401": {
+              "description": "Unauthorized",
+              "schema": {
+                "$ref": "#/definitions/failedRequest"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/failedRequest"
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "registerSuccess": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "fullName": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "phoneNumber": {
+              "type": "string"
+            },
+            "profilePic": {
+              "type": "string"
+            },
+            "token": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "failedRequest": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": null
+        },
+        "status": {
+          "type": "boolean",
+          "defaultValue": false
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "loginSuccess": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "fullName": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "phoneNumber": {
+              "type": "string"
+            },
+            "profilePic": {
+              "type": "string"
+            },
+            "token": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "userData": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "fullName": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "phoneNumber": {
+              "type": "string"
+            },
+            "profilePic": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "updatedUserData": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "data": {
+              "fullName": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "phoneNumber": {
+                "type": "string"
+              }
+            },
+            "status": {
+              "type": "boolean"
+            },
+            "message": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "updatedPassword": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "weatherData": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "max_temp": {
+                "type": "string"
+              },
+              "min_temp": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "plantsData": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "plantName": {
+                "type": "string"
+              },
+              "plantShortDescription": {
+                "type": "string"
+              },
+              "plantMediumDescription": {
+                "type": "string"
+              },
+              "plantLongDescription": {
+                "type": "string"
+              },
+              "minimumdegrees": {
+                "type": "string"
+              },
+              "stateofTemperature": {
+                "type": "string"
+              },
+              "numberOfWater": {
+                "type": "string"
+              },
+              "plantCareInstruct": {
+                "type": "string"
+              },
+              "plantImage1": {
+                "type": "string"
+              },
+              "plantImage2": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "plantData": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "plantName": {
+              "type": "string"
+            },
+            "plantShortDescription": {
+              "type": "string"
+            },
+            "plantMediumDescription": {
+              "type": "string"
+            },
+            "plantLongDescription": {
+              "type": "string"
+            },
+            "minimumdegrees": {
+              "type": "string"
+            },
+            "stateofTemperature": {
+              "type": "string"
+            },
+            "numberOfWater": {
+              "type": "string"
+            },
+            "plantCareInstruct": {
+              "type": "string"
+            },
+            "plantImage1": {
+              "type": "string"
+            },
+            "plantImage2": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "classifiedImage": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "prediction": {
+              "type": "string"
+            },
+            "confidence": {
+              "type": "string"
+            },
+            "information": {
+              "type": "string"
+            },
+            "products": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "price": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "images": {
+                    "type": "string"
+                  },
+                  "tags": {
+                    "type": "string"
+                  },
+                  "seller": {
+                    "type": "object",
+                    "properties": {
+                      "fullName": {
+                        "type": "string"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "city": {
+                        "type": "string"
+                      },
+                      "phoneNumber": {
+                        "type": "string"
+                      },
+                      "profilePic": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "comment": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "comment": {
+              "type": "string"
+            },
+            "product": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "string"
+                },
+                "seller": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "fullName": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "phoneNumber": {
+                      "type": "string"
+                    },
+                    "profilePic": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "commenter": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "fullName": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "phoneNumber": {
+                  "type": "string"
+                },
+                "profilePic": {
+                  "type": "string"
+                }
+              }
+            },
+            "prediction": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "deletedComment": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": null
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "addedFavorite": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "product": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "string"
+                },
+                "seller": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "fullName": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "phoneNumber": {
+                      "type": "string"
+                    },
+                    "profilePic": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "user": {
+              "type": "object",
+              "properties": {
+                "fullName": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "phoneNumber": {
+                  "type": "string"
+                },
+                "profilePic": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "deletedFavorite": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": null
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "recommendedCrop": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "soil type": {
+              "type": "string"
+            },
+            "confidence": {
+              "type": "integer"
+            },
+            "previous crop": {
+              "type": "string"
+            },
+            "season": {
+              "type": "string"
+            },
+            "recommended crop": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.nav-bar {
+  width: 60%;
+  position: fixed;
+  top: 20px;
+  left: 20%;
+  z-index: 200;
+  background: rgba(249, 255, 249, 0.368627451);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.nav-bar .logo {
+  width: 60px;
+  border-radius: 5px;
+}
+.nav-bar .logo img {
+  width: 100%;
+}
+.nav-bar .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-bar .links {
+  width: 50%;
+}
+.nav-bar .links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar .links ul a {
+  color: var(--dark-green);
+  font-weight: 400;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+  font-weight: bolder;
+}
+.nav-bar .links ul a:hover {
+  font-size: 20px;
+  color: var(--orange);
+}
+.nav-bar .links ul .home {
+  color: var(--orange);
+  font-size: 20px;
+  font-weight: bolder;
+}
+.nav-bar button {
+  background: linear-gradient(90deg, #ebb461, #fa8966);
+  box-shadow: 0 10px 30px rgba(250, 137, 102, 0.2);
+  border-radius: 48px;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.nav-bar button:hover {
+  background-image: linear-gradient(90deg, #f5a62f, #fa5827);
+  transition: 0.4s ease-in-out;
+}
+.nav-bar button a {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}

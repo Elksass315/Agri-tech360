@@ -1,0 +1,459 @@
+
+[
+	{
+		"id": 1,
+		"type": "diseases",
+		"name": ["Black Knot"],
+		"description": ["Black knot is a fungal infection that affects fruit and ornamental trees. The condition is caused by the pathogen Apiosporina morbosa. It is most widespread on cherry, plum, and apricot trees. The disease usually occurs in spring, but the symptoms may not be evident until the following year."],
+		"signs": "The stems and branches are covered with knobby, swollen black growths. These growths, commonly known as galls, emerge in early summer. Within a tree canopy, there can be anywhere from a couple of galls to hundreds of galls. By the end of summer, they turn black and develop a hard texture. The galls are most noticeable in fall and winter after the tree has shed its leaves.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Depositphotos_281822762_XL_min_9a4c55cd07.webp&w=640&q=75"
+	},
+	{
+		"id": 2,
+		"type": "diseases",
+		"name": ["Plant Parasitic Nematodes"],
+		"description": ["Animalia is one of the diseases that is caused by Nematode worms. Nematodes are wormlike in appearance but quite distinct taxonomically from the actual worms. Annual worldwide losses caused by nematodes are estimated at about 11%. They mostly affect life-sustaining crops, which include all grains and legumes, bananas, cassava, coconut, potatoes, sugar beets, sugar cane, sweet potatoes, and sweet potatoes."],
+		"signs": " Withering of the whole plant, even with proper watering , Yellowing of the foliage , Loss of leaves , Bulb and stem nematodes cause swelling of the stem and shortening of the internodes ,Bud and leaf nematodes distort and kill bud and leaf tissue ,Of course, all the mentioned symptoms result in reducing yield.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_tomato_with_root_knotjpg_13432fd43f.webp&w=640&q=75"
+	},
+	{
+		"id": 3,
+		"type": "diseases",
+		"name": ["Rhizoctonia Blight, Rot and Damping-off"],
+		"description": ["Rhizoctonia solani is a complex of related species of fungi. This plant pathogen affects a wide variety of plants worldwide, mainly crops such as potatoes, cucumbers, soybeans, cereals, and many more. This makes it a devastating threat to agricultural practices and has a major economic impact. It can survive in the soil for several years, and due to this, it developed a cyclical process to affect its hosts. The cycle encompasses diseases like damping off, root rot, and blight, and it will primarily target the seeds and later infect all plant parts. Much like other fungi, it thrives in warmer and wet climates."],
+		"signs": "Damping off. The cycle begins with the seeds. This fungus keeps them from germinating, or it can kill young seedlings only after they emerge from the soil.Stained seedlings. ,They will show red to brown lesions, similar to rust, and dead spots on stems and roots ,Leaf damage. ,Premature yellowing and purple tinting on leaves are early signs of damage. ,Stem cankers. Stems will grow dark spots that will slowly spread and develop into tissue necrosis,The sudden collapse of leaves, Stunted growth, Reduction of root number and volume.,Root rot.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_csm_Rhizo_solani_f5ba3c059d_min_aa4afdb2c4.webp&w=640&q=75"
+	},
+	{
+		"id": 4,
+		"type": "diseases",
+		"name": ["Fusarium wilts, blights, rots and damping-off"],
+		"description": ["Fusarium is a soil-borne fungal pathogen causing a variety of plant diseases such as fusarium wilt, leading to wilting, yellowing, necrosis, leaf drop, and dumping-off. Fusarium blight appears as gray to green spots on leaves progressing into reddish-brown color, typical is also a frog-eye pattern of the spots."],
+		"signs": "Young seedlings develop a rot at the crown. Later, the tissue becomes soft and constricted, and the plants wilt and fall over.",
+		"img" :"https://strapi.myplantin.com/small_fusarium-wilts--blights--rots-and-damping-off-main_03b9b7e1-b1b8-44e7-aba4-e21c87a45d43.webp"
+	},
+	{
+		"id": 5,
+		"type": "diseases",
+		"name": ["White Pine Blister Rust Treatment"],
+		"description": ["Cronartium ribicola, a rust fungus native to China, causes this disease. This fungus needs two hosts to complete its life cycle, one from the Pinus genus and one from the Ribes genus, which is commonly known as currants or gooseberries. There is a more significant incidence of five-needle pines, especially young pines, which are more susceptible to damage. It has a life cycle between 3 to 6 years, and symptoms usually develop into irreversible damage, while the first years display moderate symptoms. This fungus prefers cooler temperatures and moist environments. There are economic effects on the timber industry since this fungus affects a vast range of Pinus, some of them considered premium materials that are ranked at higher values."],
+		"signs": "Yellow or red spots on the needles after 1 year.,Elliptical-shaped cankers will appear on branches after 2 years.Blisters., After 3 years, white and yellow blisters will appear in springtime. , Dead branches., Lower branches will perish. ,Branches above cankers will die as well.,Trunks develop oval or diamond-shaped cankers.,Orange and gummy droplets. Cankers develop these in summer",
+		"img" :"https://strapi.myplantin.com/small_whitepineblisterrustjpg_36af7755fce01b12_min_86e17b14b2.webp"
+	},
+	{
+		"id": 6,
+		"type": "diseases",
+		"name": ["Water-related issue"],
+		"description": ["Most houseplants die because you don’t water them properly. Both underwatering and overwatering harm plants, but the latter is more sticky and difficult to treat. The symptoms can look a bit similar, but you can always distinguish one from the other."],
+		"signs": "Drooping leaves,Brown tips on many leaves,Slow growth,Wilting that gets better after watering,Dry soil,Yellowing leaves that turn brown,Yellowing and mushy leaves. ,In case of overwatering, yellow leaves eventually turn mushy, while underwatered leaves turn brown and crispy,Wilting leaves. ,This happens in both cases, so check whether the soil is dry a few inches deep in the pot. ,The roots might still be sitting in water even if the top layer is dry., Root rot,Rotten roots look brown and mushy,Bad smell from the soil",
+		"img" :"https://strapi.myplantin.com/small_water_related1_d2ae5c1bcb.webp"
+	},
+	{
+		"id": 7,
+		"type": "diseases",
+		"name": ["Septoria Leaf Spot Treatment"],
+		"description": ["Septoriosis is one of the most common fungal diseases affecting many cultivated and wild plants, including root crops and ornamental crops. It is primarily characterized by the appearance of light spots with a dark border on the plant's leaves. Septoriosis progresses in high humidity conditions at a temperature of 68-77 ºF (20-25 ºC). The infection leads to the fall of most leaves in plants, disturbing the natural processes and making the plant weak and unable to develop."],
+		"signs": "light or grayish spots on the leaves with a darker border, mostly yellow,growth of the spots in size, their merging, and occupying most of the surface of the leaf;,black dots of pycnidia of the fungus appear in their center,fall of the dried leaves,bending of the stems with a change in color to brown,death of bark on trees dies.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Fmedium_Septoria_Spot_5699c4f3fd.webp&w=640&q=75"
+	},
+	{
+		"id": 8,
+		"type": "diseases",
+		"name": ["Viral Diseases in Plants"],
+		"description": ["Viruses are small pathogenic particles that infect living organisms, thus causing viral diseases. They disrupt normal cell processes by infiltrating intracellularly and forcing the host’s cells to create more viruses through replication, which means they require a host to survive and multiply. To infiltrate cells, they use wounds in plant tissue as initial entrance, and these can be natural but also inflicted by handling the plant roughly in agricultural practices, other pathogen-cause damage, or feeding damage by insects. Thus, other organisms might also carry the virus and infect the plants upon interaction. Insects are one of the most important and meaningful transmitters of viruses, especially those with sucking mouthparts. Propagation, especially by cuttings, is also a common gateway for viral diseases. Some well-known viruses are TMV, PVY in potatoes, and CMV in cucumbers. It is important to note that some plants might be infected but show no signs, which is known as a latent infection."],
+		"signs": "Mosaic patterns. ,Abnormal patterns resembling mosaics in dark and light green will appear on leaves.,Ring patterns.,Bumpy leaves.,Necrosis of some spots.,Growth distortion. ,Plants’ growth will be stunted and irregular.,Flower distortion., Flowers will present both colors and shape out of the ordinary.",
+		"img" :"https://strapi.myplantin.com/small_HGIC_flowers_peony_virus_symptoms_CC_600_856254ea53.webp"
+	},
+	{
+		"id": 9,
+		"type": "diseases",
+		"name": ["Tospovirus"],
+		"description": ["Tospoviruses belong to the Orthotospovirus genus with at least 20 species. Thrips transmit them, and over 30 species of these insects are confirmed to act as vectors for this virus. Thrips can only become infected during their larval phases but, once infected, will transmit the virus throughout their entire lifetime. Also, since these insects have high fecundity, their proliferation is extremely effective, and control is hard, making Tospovirus control hard as well. Some Tospovirus species can also be transmitted through physical contact, and others through infected seeds. It affects many hosts, from food crops like vegetables and legumes to ornamental plants like lilies and chrysanthemums. This viral disease is prevalent in warm climates and has spread throughout most of the planet, being present in Asia, Europe, America, and Africa."],
+		"signs": "Spotting and mosaic patterns.,Bronze leaves. ,A bronze-colored or purplish cast that later develops into dark spots.,Wilting and curling leaves., Usually, curling happens inwards, and the top part of the plant begins to wilt.,Dark streaks in the main stem., Stem necrosis. ,Deformed fruit. ,Fruit will develop unevenly, with deformities and bumpy surfaces, and ripening will also be heterogeneous.,Stunted growth.,Reduced vegetative output.,Death.",
+		"img" :"https://strapi.myplantin.com/small_14833_original_min_aa8e1f8a1c.webp"
+	},
+	{
+		"id": 10,
+		"type": "diseases",
+		"name": ["Tobacco Rattle Virus Treatment"],
+		"description": ["This is a relatively common viral disease, named after the first plant known to be infected, but with a wide range of over 400 species of susceptible plants. It can be serious if untreated and affects various ornamental plants like marigolds, tulips, daffodils, and much more. It can also affect vegetable crops like beans, pepper, spinach, and potatoes, although, with the latter, it's known as Corky Ring Spot. It is spread primarily by worm-like microscopic organisms (nematodes) that feed on the roots of infected specimens and carry the disease to non-infected plants. This makes its spread dependent on these transmitters' activity and presence, which thrive on soil with high moisture levels. It can also spread through infected sap and mechanical actions such as pruning and handling damaged plants. This virus has a significant impact on the ornamental industry"],
+		"signs": "Mottling. Discoloration of leaf tissue.Chlorosis and patterned leaves., Yellow wavy lines, ring spots, or mosaic patterns will spread through the foliage.,Leaves will display notches.,Necrotic lesions.,Leaf and stem deformities, especially in younger plants.,Tuber damage. On potatoes, tubers will display darker rings.,Reduced vigor.,Dieback.",
+		"img" :"https://strapi.myplantin.com/small_tmv_seebold_img_5199_min_a41e776b98.webp"
+	},
+	{
+		"id": 11,
+		"type": "diseases",
+		"name": ["Shot Hole Disease"],
+		"description": ["The disease’s name couldn’t be more evident because it is about the holes. These ‘craters’ are created by the fungus Wilsonomyces carpophilus. The trees that are affected by this disease are mostly cherries, almonds, nectarine, peaches, apricots, etc. Spring is the most favorable period for the disease. During this period pay attention to the leaves. At first, there will be spots with light green or yellow margins. Later, the affected areas become more prominent, and the centers turn brownish and drop out. Fungal spores that can be found in the centers of brown spots are the main sign that distinguishes this disease from the others. Despite being so common, Shot Hole Disease is a severe issue since it damages the fruit and causes premature leaf drop"],
+		"signs": "Spots on the leaves. Despite the whole three being affected, stems, buds, and fruits included, the leaves’ light green or yellow spots are a most telling sign. Shot holes. These brownish spots then drop out, leaving the holes.Spots on fruits. At first, they are tiny and purple, but later they turn white or gray. Gummosis. The process is when a gummy substance is created on affected plants, and sometimes it happens due to Shot Hole Disease",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Fsmall_Example_of_Shot_Hole_Disease_b1f61159b2.webp&w=640&q=75"
+	},
+	{
+		"id": 12,
+		"type": "diseases",
+		"name": ["Peach Leaf Curl"],
+		"description": ["The fungus Taphrina Deformans causes this plant’s disease. As you can guess from the disease’s name, it affects Peach trees and other fruit trees like nectarines, apricots, and almonds. Sometimes it’s shortly known as ‘Curl’ and it doesn’t have mercy for the plant because it causes severe warp of the leaves in spring, destroying them prematurely. Its working time in spring is not coincidental because fungal spores are fond of warmth. The wet weather during this period even worsens the plant’s condition since fungal spores can create new infections."],
+		"signs": "White fungal spores on the diseased leaves. It’s easy to notice the problem because of its look.Rapid falling of the affected leaves. This is harmful in spring because defoliation exposes brunches and can lead to sunburn. Leaves’ look changes. They become thicker and jammed, and their color turns red. Shots also become thicker, and the disease can kill them if they are heavily affected.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Peach_Leaves_affected_by_Leaf_Curl_fcf405fc24.webp&w=640&q=75"
+	},
+	{
+		"id": 13,
+		"type": "diseases",
+		"name": ["Chilling and Frost Injury"],
+		"description": ["Frost damage occurs if the plant stays in unacceptably low-temperature conditions for a long time. Prolonged or severe exposure to low temperatures can kill your plant, especially if it is a tropical and thermophilic species. Low temperature inhibits vital processes inside the plant, such as photosynthesis and water exchange."],
+		"signs": "The plant has slowed down growth and progress. The plant may also stop growing completely. Your flower looks sluggish and drooping. The leaves darken, turn yellow and wrinkle, and lose their former color and juiciness.   The stems and leaves of the plant are covered with a crust of ice. The juice inside the plant has frozen, and the plant itself seems to be hardened. Your plant's roots look sluggish. When a flower is open to low temperatures, its roots can rot.The thick stem of the plant may become cracked. It is especially dangerous for ornamental trees and palms. The flowers and leaves of the plant fall off.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Chill_Injury_Figure_4_3692f95411.webp&w=640&q=75"
+	},
+	{
+		"id": 14,
+		"type": "diseases",
+		"name": ["Light or Heat Source Damage"],
+		"description": ["The increased temperature of the environment in which your plant grows can cause damage both during the day and at night. Heat stress can be understood as a situation where the ambient temperature of a plant is high for a period sufficient to cause irreversible damage to its life and development. Even the slightest increase in temperature can damage the growth and development of many plant species. Different types of plants can suffer from heatstroke differently, which means your maintenance efforts should be multiplied a bit during the summer"],
+		"signs": "Leaf rolling and cupping , Wilting ,Dry leaf edges ,Ozone damage ,Blossom and fruit dropSunscald",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Heat_Damage_1024x675_d37ee42fcd.webp&w=640&q=75"
+	},
+	{
+		"id": 15,
+		"type": "diseases",
+		"name": ["Light excess"],
+		"description": ["When the light exposure level is too intense for a particular plant, the chlorophyll begins to break down. The symptoms are even more severe if the dry soil accompanies inadequate lighting conditions."],
+		"signs": "Chlorosis. Since excessive light breaks down chlorophyll, the green pigment, you can notice leaf yellowing.Droopy leaves. A dry plant does not have enough strength and energy to stand still.Brown tips. The more light a houseplant receives, the more water it needs. If the water quantities do not satisfy the plant's needs, leaf edges are the first ones to take the hit. Foliage distortion. The leaves are covered with bleached, pale, or faded areas.Stunted growth. Too much sunlight impedes plant growth. The greenery is too weak to develop and function properly",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_shutterstock_2168783521_bdbc99e986.webp&w=640&q=75"
+	},
+	{
+		"id": 16,
+		"type": "diseases",
+		"name": ["Chromista"],
+		"description": ["Chromista, also known as water molds, are fungus-like eukaryotic organisms. Their cell wall is composed of cellulose and glucans. Chromista produces sexual spores (oospores) and asexual spores (zoospores). The microorganisms are aquatic or soil-inhabiting and cause multiple devastating plant diseases"],
+		"signs": "The organisms cause yellow spots on the leaf surface between the veins. These spots keep spreading until the veins turn brown. When the whole leaf goes brown, it falls off. If the plant loses too many leaves, it dies.The undersides of the leaves may have a fuzz that varies from white to purple in terms of color. Consequently, the fruit growth may stop because the leaves no longer shade them. Then the fruits rot or get sunscald.You may also notice white blister-like growths on the lower side of the leaves. The stems may be covered in it too. If you dig up the soil around the roots, you may find them swollen. Other symptoms include flower deformation and chlorosis (leaf yellowing).",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_main_chromista_2_fc2948ec92.webp&w=640&q=75"
+	},
+	{
+		"id": 17,
+		"type": "diseases",
+		"name": ["Finished flowering period"],
+		"description": ["Like all living things, plants have their own life cycle. The flowering stage – the one when the flowers are produced – takes enormous amounts of energy. The resting period is crucial for a plant to survive and regrow."],
+		"signs": "Blooming is only one stage in the life cycle of any plant. The flowering period time depends on the species of your green friend – while some only flower for about a week, others can stay in bloom for a month. Signs of finished flowering are clear and easy to identify – the flower itself loses its pretty appearance. It can get dry; petals might fall off or start rotting. At the same time, the rest of the plant remains healthy.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_air_related_issues1_1bd5c37084.webp&w=640&q=75"
+	},
+	{
+		"id": 18,
+		"type": "diseases",
+		"name": ["Air-Related Issues"],
+		"description": ["Humidity and drafts can become major troubles for your plant friends. Both extra low and extra high humidity stunt growth and lead to diseases, and the same goes for cold and hot drafts. Yet there are some techniques to adapt air quality to your plant’s needs."],
+		"signs": "t can be challenging to figure out what’s wrong with your plant if the problem is air-related. The symptoms aren’t that specific. \nIf the extra low humidity or hot/cold drafts are an issue, you may notice these symptoms: The whole plant is droopingLeaves turn brown, yellow, or fadedLeaves look like they’ve been burnedThese are very similar to frequent cases of overwatering. However, if your plant exhibits these symptoms even if you’re following the proper watering schedule, air might be the issue. Extra high humidity can cause yellowing leaves and drooping plants. This is similar to overwatering, so check whether overwatering isn’t an issue first. In some places (basements, for example), humidity may be so high that it provokes mold growth.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_airrelated1_5ddcc02494.webp&w=640&q=75"
+	},
+	{
+		"id": 19,
+		"type": "diseases",
+		"name": ["Sunburn"],
+		"description": ["Much like humans and other animals, plants need to have just the right amount of sun exposure to avoid getting damaged. Sunburn in plants is similar to the one we experience as humans in the sense that a plant that gets direct sun exposure, especially in summer, will see some sort of damage to its tissues. This damage is usually known as a leaf scorch. This can happen by exposing a shade-loving plant to direct bright sunlight and abruptly exposing a sun-loving plant to a brighter, more intense light source."],
+		"signs": "Leaves turn white. Large bright areas of the leaf will appear as if bleached, especially if the exposure is intense. They might get to a paler shade of yellow in less intense sunlight before turning completely white.Brown crispy leaves. If the exposure is long and very aggressive, the leaves will turn brown instead of white and will become slightly crispy and brittle.Only the top leaves are damaged. As the sun won't be able to penetrate through the foliage, the leaves that sit closer to the ground will not suffer any damage. This is a clear way to tell that your plant is sunburnt and doesn't experience symptoms from other diseases.Fast process. The signs usually appear after just a few hours",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Getty_Images_1093415420_83395d11f19e4abfa67ffe969a36bbed_min_91d49b3309.webp&w=640&q=75"
+	},
+	{
+		"id": 20,
+		"type": "diseases",
+		"name": ["Diplodia Tip Blight In Plants"],
+		"description": ["This fungal disease, formerly known as Sphaeropsis, is especially common among conifers. Its most prevalent victims are Austrian pine, red pine, Mugo pine, Ponderosa, and scots pine. This illness can attack seedlings, but it mostly prefers trees older than 15 years. If the tree is twice this age, so 30 years old or more, it is very attractive to these bugs. In the forests, this disease isn’t so visible, so trees are more inclined to it if they are planted in the garden and are not taken care of properly. Such factors as compacted soils, and droughts, only contribute to the problem."],
+		"signs": "Disfiguration. This is one of the most prominent signs of this disease in the conifers. Dying of the branches. It happens when the tree is heavily infected.Brown needles. Another important sign is that needles are the most vulnerable part of conifers regarding this disease.New shoots are stunted. The disease affects the plant’s growth, so new shoots are already weakened. Fungal fruiting bodies on the dead needles. It is one of the later stages of the disease",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Diplodia_Tip_Blight31607_3b9582974a.webp&w=640&q=75"
+	},
+	{
+		"id": 21,
+		"type": "diseases",
+		"name": ["Sordariomycetes In Plants"],
+		"description": ["Thousands of species of this fungus cause various diseases. For example, Dutch Elm disease comes from Ophiostoma, Chestnut Blight by Cryphonectria, stem and leaf Blights by Diaporte, Ergot of Rye by Claviceps, and many others. Sordariomycetes are found in the water and soil as well. Many of the species are also involved in the decomposition process. Their most prominent characteristic are fruiting bodies of the fungal phylum Ascomycota. Sordariomycetes are generalized by sexual type of reproduction and adaptability."],
+		"signs": "Reddish brown patches on the bark. This happens when the tree suffers from chestnut blight. These patches will then transform into swollen cankers. With time this disease kills the infected tree.Honeydew. The appearance of this sticky secretion is a tell-tale sign that your ray has ergot.Brown spots with yellowish rings. The main symptom is that your plant has leaf blights; these spots become bigger and combine. Such “a union” of spots makes the disease even more visible.Curling of leaves and branches. This is especially noticed in Dutch Elm disease. The worst part is that the affected tree, if untreated, eventually dies.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_sordariomycetes-main_0bfe3e30-3fb9-47a2-ba74-e83d56484ca8.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 22,
+		"type": "diseases",
+		"name": ["Septoria Leaf Spot Treatment"],
+		"description": ["Septoriosis is one of the most common fungal diseases affecting many cultivated and wild plants, including root crops and ornamental crops. It is primarily characterized by the appearance of light spots with a dark border on the plant's leaves. Septoriosis progresses in high humidity conditions at a temperature of 68-77 ºF (20-25 ºC). The infection leads to the fall of most leaves in plants, disturbing the natural processes and making the plant weak and unable to develop."],
+		"signs": "light or grayish spots on the leaves with a darker border, mostly yellow; growth of the spots in size, their merging, and occupying most of the surface of the leaf; black dots of pycnidia of the fungus appear in their center; fall of the dried leaves; bending of the stems with a change in color to brown; death of bark on trees dies",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Fmedium_Septoria_Spot_5699c4f3fd.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 23,
+		"type": "diseases",
+		"name": ["Leaf Senescence in Plants"],
+		"description": ["Leaf senescence is the name given to the final stage of a leaf’s development. When it happens naturally, it is often associated with the aging of leaves, and it’s vital for the plant’s development and continuity. This process also causes leaves to change color in the fall. It marks the shift between the vegetative stage and the reproductive phase of a plant, and the cells die so the nutrients can be relocated to younger plant parts, mainly their reproductive organs. This happens because, unlike animals, plants constantly renew their organs and recycle the older ones to benefit newer ones. When external factors induce senescence, the plant is triggered by environmental causes and enters a stage of stress. Insufficient improper conditions usually trigger this problem"],
+		"signs": "Yellowing of leaves. This is caused by the destruction of chloroplast complexes that are converted into other important components. Wilting and falling of leaves",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_dying_plant_banner_scaled_min_83a69da07f.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 24,
+		"type": "diseases",
+		"name": ["Rust"],
+		"description": ["More than 7 thousands of fungi species are responsible for this disease. A tell-tale sign of this problem is pustules of yellow, orange, and brown powdery pustules that can be found on leaves, fruits, and shoots. Even visually, the rust on the plants is kind of similar to the regular one. Rust rarely kills the plant but reduces its growth and affects its look. Mild and moist conditions are the most favorable for this fungal disease. That’s why rust disease spreads after watering because wet surfaces are generally suitable for fungi. Air is another way of spreading this disease because it is transferred by spores it has."],
+		"signs": "General weakening. As with any disease, this one influences a plant’s vigor. Yellowish spots on the leaves. This sign can help to identify the problem at the beginning. Pustules of yellow or red colors. They remind of blisters, and their appearance is the most important sign that the plant is affected. Deformation of the leaves. Obviously, if the plant is loosened, it affects its look; deformed leaves prove it",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Fmedium_TM_Jan20_diseases_pear_rust_lead_min_4ef6178cb5.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 25,
+		"type": "diseases",
+		"name": ["Pucciniales"],
+		"description": ["The order Pucciniales contains a large number of fungal plant pathogens causing rust - one of the most important diseases of crops."],
+		"signs": "Plants with severe rust infection may appear stunted, chlorotic (yellowed), or may display signs of infection such as rust fruiting bodies. Rust fungi grow intracellularly, and make spore-producing fruiting bodies within or, more often, on the surfaces of affected plant parts.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_pucciniales-main_39166b7f-496a-4f3b-b1db-d6dc34e5ac52.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 26,
+		"type": "diseases",
+		"name": ["Pucciniaceae"],
+		"description": ["Fungi from the Pucciniaceae family cause rust in many different plants, most common are in cereals (such as wheat)."],
+		"signs": "Plants with severe rust infection may appear stunted, chlorotic (yellowed), or may display signs of infection such as rust fruiting bodies. Rust fungi grow intracellularly, and make spore-producing fruiting bodies within or, more often, on the surfaces of affected plant parts.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_pucciniaceae-main_7cef897a-ae6e-495e-907f-aaf3616750fa.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 27,
+		"type": "diseases",
+		"name": ["Puccinia"],
+		"description": ["Puccinia is a genus of fungi that is harmful to plants. For example, Puccinia triticina causes leaf rust, a prevalent disease of wheat. One of the worst parts of this infection is that it can cause a loss of 20% of the harvest. It happens because in warm climates, pathogen overwinters easily, and also rotten leaves worsen the situation because they fertilize the fungus. As long as the infected leaf is alive, the fungus can spread further because wind can transfer infectious urediniospores, so even plants hundreds of kilometers away can be affected. Puccinia graminis, also known as black stem rust, affects cereals. It is the primary host for wheat and the barberry plant."],
+		"signs": "Uredinia. A structure of reddish or black spores and hyphae form pustules on the plant. Mostly it can be spotted on the leaf sheaths, but you can also find them on leaves or stems.  Black telia. This spore-bearing fungal tissue attached to the affected plant’s tissue forms during the reproductive period. Telium is of yellow or orange colors; however, it dries to black with time.  Big yellow or reddish spots can be found under the leaves. This symptom is a result of Puccinia poarum’s activity. Such spots, in most cases, have margins of purple color and rarely a hole in the center.  Poor quality of growth. The good news about Puccinia graminis is that even when the plant is heavily infected, it doesn’t cause some dramatic damage; this pathogen is capable of a balanced parasite-host relationship..",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_puccinia-main_48dbf9bc-71ed-4c8b-9fcd-5e2c45ad3f31.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 28,
+		"type": "diseases",
+		"name": ["Pseudomonas In Plants"],
+		"description": ["Pseudomonas is a genus of bacteria that contains 191 known species. It contains a wide range of different types of bacteria, from plant and soil pathogens to plant growth promoters that have wide occurrence in water and plant seeds. The pathogenic species can colonize a wide range of hosts, with some causing major agricultural losses. One of the most common ones is Pseudomonas syringae, which primarily affects woody plants, especially those already damaged by injuries or frost. Some of the known hosts are magnolias, dogwood, fruit-bearing trees like apples, kiwis, and cherries, and some herbaceous plants. These bacteria cause tissue damage and produce toxins, killing cells and using them to multiply. They also produce a protein that allows ice crystals to form, leading to pierced tissue and damaged cells. It is spread worldwide and is an important threat to agroforestry practices."],
+		"signs": "Cankers. Flower blights. On lilacs: Lilac leaves develop brown spots, round to irregular-shaped with yellow borders. Twigs will also die and turn black. On maples: Some maple species will experience leaf spotting, blackened veins, and death of branch tips. Frost damage. Due to the ability to promote the appearance of ice crystals.   Dieback",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Pseudomonas_syringae_a2_3_min_d9f3506d53.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 29,
+		"type": "diseases",
+		"name": ["Potassium Deficiency in Plants"],
+		"description": ["Potassium deficiency is rare in nature, as this essential nutrient is abundant. Still, it can occur in agricultural settings when the amount of potassium in the soil has been decreasing due to continuous usage of this mineral by plants. This will tamper with the plant's survival ability, as potassium is vital in regulating water movements and uptake, building drought and pest resistance, regulating growth, and helping with photosynthesis. It is more common on light sandy soils or soils with low clay content, allowing water to wash off easily and flush the nutrients. The crops that tend to be most affected are fruits and vegetables, like potatoes, tomatoes, apples, and some cereals."],
+		"signs": "Wilting on dry, sunny days and drooping appearance. Young leaves' growth is stunted, while old leaves are affected first. Color changes on leaves. Darker to bluish-green leaves that sometimes develop a metallic bronze-like shine. Chlorosis. Particularly between the leaf's veins. Also, purple spots tend to appear underneath the leaves. Necrosis of leaf margins and curling up of the leaves tips. Stunted growth and fruit development. Plants become more prone to frost damage and diseases. Crop-specific symptoms. Apples tend to get more acidic and have a slight taste of wood.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_K_deficient_soyabean_Cedara_2013_02_08_08_23_10_7478_min_01949df9d3.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 30,
+		"type": "diseases",
+		"name": ["Phytoplasma Disease in Plants"],
+		"description": ["Phytoplasmas are a class of bacteria spread by insects, including grasshoppers and leafhoppers. Discovered in 1967, this class of bacteria is detrimental to plants, especially global crops. Interestingly, it cannot be grown in the lab, making it hard to create fungicides against it. Most often found in subtropical and tropical regions, this disease has caused the loss of many endemic plants. It is a global concern, and many countries are working together to find a cure and preventive measures against Phytoplasmas."],
+		"signs": "This disease can take many forms and can be a mild nuisance to death-causing for the plant host.  Leaves may turn red or yellow. Witches' broom: a clustering of small shoots and is most often found on wood-dwelling plants.Flowers, or the stems that lead to the flowers, will turn green.  Growth stunt and loss of color, resulting in poor or wilting plants.  In severe cases, plants may die.  It's important to note that while these are some of the more common symptoms found, Phytoplasmas cause many symptoms and are constantly evolving as a virus-type bacteria",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Phytoplasma_02_min_6ce22bd679.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 31,
+		"type": "diseases",
+		"name": ["Phyllosticta Leaf Spot in Plants"],
+		"description": ["Phyllosticta Leaf Spot is a common plant disease that affects the leaves of plants and trees. Mostly found on dead foliage, it is imperative to clean out dead plant debris to help stop the spread of this disease. While not considered an aggressive disease, it is easily spread and is unsightly on decorative plants. It most often attacks during wet seasons and during winter and most often goes for evergreen plants."],
+		"signs": "Early symptoms include small circles or oval spots that will develop on leaves. Spots will be brown, black, gray, or beige in color.  As the disease progresses, these spots will slowly grow larger and can join together, creating large spots that will overtake the leaves. These spots can occasionally fall out, leaving holes in the leaves.  Often, small black bodies can be seen within the spots and feel raised to the touch.  If the infection is bad enough, leaves may turn yellow, drop off the stem, and cause death to the plant.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Phyllosticta_cruenta_DK_17_2_min_144cd556f1.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 32,
+		"type": "diseases",
+		"name": ["Phomopsis Blight and Canker"],
+		"description": ["Phomopsis Blight and Canker usually occur on hardwood tree species and blueberry plants. These diseases attack young plants and enter through wounds, such as cankers or pest-feeding sites. It has also been observed to take root in new bud growths. This disease spreads easily through spores that break off once they grow large enough. Sometimes, trees can live with this disease until it becomes too stressful, and it is often a headache for forest management."],
+		"signs": "Plants with severe rust infection may appear stunted, chlorotic (yellowed), or may display signs of infection such as rust fruiting bodies. Rust fungi grow intracellularly, and make spore-producing fruiting bodies within or, more often, on the surfaces of affected plant parts.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Agrobacterium_tumefaciens_Forsythie_min_739b727d22.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 33,
+		"type": "diseases",
+		"name": ["Phoma Mold On Plants"],
+		"description": ["Phoma blight disease is caused by different Phoma species. This disease is most common in crops but can also be found in decorative plants. Phoma is a class of mold that will damage your plants, spread easily, and cause crop and plant death. This mold is most often found in potato and corn plants, causing losses to farmers worldwide annually."],
+		"signs": "Phoma mold begins in the soil and can linger in old plant debris. This is a patient mold and will wait for the right conditions, such as wet or moist soil, to begin growing.  Look closely at the soil line of your plants. If plants begin to wilt and brown, Phoma mold may be the culprit.  Phoma mold can develop into Phoma blight, where dark brown and black lesions form on the plant stems. Phoma blight will take over one side of a leaf and destroy a plant quickly once it has taken hold. This mold can also be present on mature fruits and vegetables, commonly known as mold and easily identifiable.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Depositphotos_110839700_L_min_9d7325974e.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 34,
+		"type": "diseases",
+		"name": ["Pestalotiopsis leaf spot"],
+		"description": ["Pestalotiopsis, otherwise known as Leaf Spot, attacks members of the palm tree family. This plant disease is most often observed in Florida, particularly on the pygmy date palm. If left unmanaged, Pestalotiopsis can kill its host. Juvenile palms are most susceptible to this disease."],
+		"signs": "Plants with severe rust infection may appear stunted, chlorotic (yellowed), or may display signs of infection such as rust fruiting bodies. Rust fungi grow intracellularly, and make spore-producing fruiting bodies within or, more often, on the surfaces of affected plant parts.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_pucciniaceae-main_7cef897a-ae6e-495e-907f-aaf3616750fa.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 35,
+		"type": "diseases",
+		"name": ["Peronosporea"],
+		"description": ["Peronospora is a genus of oomycetes from the Peronosporaceae family with 260 species. They are widely known as downy mildew since most species produce this kind of disease. These plant pathogens are notorious for causing great damage to several crops, ornamental plants, and wild plants. Most species are highly specific to their hosts. Examples of this are the specie that causes blue mold on tobacco plants, another for sweet onion, and even one specific to opium poppy. Their potentially devastating nature is so significant they have even been classified as a bioweapon. These fungi-like molds prefer humid air and cool temperatures and spread by wing, which allows for effortless dispersion over large areas."],
+		"signs": "Leaf damage. Leaves will begin to curl and get distorted. They’ll begin yellowing and stippling, and it can even lead to necrotic spots across their surfaces. Spores. White spores from the pathogen will appear on the down-facing surface of the leaves. Defoliation. Stunted growth. The damage will result in the inability for proper development, and plants will begin to grow slower or even cease to grow.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Peronospora_alchemillae_a1_1_min_9a0e4a2a78.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 36,
+		"type": "diseases",
+		"name": ["Peronosporaceae"],
+		"description": ["Peronosporaceae is a family of water molds with around 600 species, which share some similarities with fungi. They’re mostly known as downy mildews since most species produce this disease. They are plant pathogens, with most preying on plants from the Magnoliids clade, and are considered parasites because they cannot survive without a host. Moreover, these molds possess specialized structures to penetrate the host’s tissues. Some of the most affected and targeted plants in agricultural practices are grapevines, tobacco, and lettuce. This often translates to high economic losses in crops and ornamental plants."],
+		"signs": "Leaf bleaching. All the chlorophyll is stripped from the leaves, leaving them with a pale yellow to whiteish color. Wilting. Leaves will wilt, wither, and eventually die. Infections. Stems, flowers, and fruits will become infected. Seedling collapse. Dwarfism. Plants’ growth will be stunted, resulting in smaller, less developed plants.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_original_min_d04d6e3947.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 37,
+		"type": "diseases",
+		"name": ["Nutrient Deficiency in Plants"],
+		"description": ["Any insufficient quantity of an essential nutrient required for growth is considered a nutrient deficiency. Plants' development will be compromised if they only have limited access to vital chemical elements, both macronutrients and micronutrients. The most important ones are nitrogen, potassium, phosphorus, magnesium, manganese, iron, and calcium. Others tend to affect only a specific group of plants. This can happen to most plants, although fruits and vegetables are particularly vulnerable to nutrient deficiencies which can lead to complete crop loss. Some causes of nutrient deficiencies are extreme soil pH levels, excessive dryness, and water-drenched soils."],
+		"signs": "Nitrogen. Causes yellowing and browning of leaves and, in extreme cases, irreversible chlorosis, scorching, and necrosis. The plants will have their growth stunted and poor flowering and fruiting. Potassium. The leaves will become tinted in yellow and purplish shades, and their edges will begin to brown. Phosphorus. Dull foliage will become yellow, with the underside of leaves becoming purple or bronze tinted. The plant's growth will slow down. Magnesium. Leaves will fall earlier than expected and get a distinctive yellowing or browning between the leaves veins.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_nutrient_related_issues3_d9d824a9ce.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 38,
+		"type": "diseases",
+		"name": ["Nitrogen Deficiency in Plants"],
+		"description": ["Nitrogen is one of many essential nutrients for plants' optimal development and survival. It is essential to photosynthesis and, subsequently, chlorophyll and nutrient production. It is abundant in the atmosphere but often insufficient in soils, leading to nitrogen deficiency. Due to nitrogen's soluble nature, possible reasons for this are very low or very high pH levels, thin and sandy soils, and washing from soils by heavy rain. This leaves the soil deficient and tramples the plants' development. Nutrient deficiency can affect all plants but is especially common in vegetables."],
+		"signs": "Older leaves become yellow. Since the nitrogen is not enough for the entire plant, old leaves are the first affected, and young new lives are prioritized. Long and thin leaves. Leaves become thinner and longer, with yellow and reddish or pinkish tints. In severe cases, leaves begin to crisp up. Soft leaves. Leaves lose their strength and begin to fold in. Chlorosis. All the leaves become a pale lime-green or yellow-green shade. Falling of leaves. The older leaves will begin to fall. Nitrogen promotes leafy green foliage, so leaves will be the most affected part of the plant. Poor flowering and fruiting. Stunted growth. Due to its inability to feed properly, the plant will decrease its growth rate and potentially stop growing altogether",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_nitrogen_deficiency_hero_min_1d1466c01e.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 39,
+		"type": "diseases",
+		"name": ["Mycosphaerellaceae"],
+		"description": ["The family of sac fungal species Mycosphaerellaceae presents a danger to numerous plants such as beets, quinoa, spinach, cannabis, eucalyptus, and others. Most of the diseases caused by them affect the above-ground organs of plants, lead to leaf spotting and premature drying. They persist on plant remains, spread by air and water droplets, and develop in warm but humid weather. Diseases caused by these fungi can lead to significant yield losses, however, they may not appear every year."],
+		"signs": "The appearance of yellow, white, or reddish-to-purple spots; Necrosis or chlorosis; Yellowing of leaf plates; After that, the infection may descend into the petioles of the leaves; The affected plant loses its foliage; The fruits gets infected as well.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_mycosphaerellaceae-main_2542de45-2ce7-419e-a1d9-71623a30c4ad.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 40,
+		"type": "diseases",
+		"name": ["Mosaic virus (general)"],
+		"description": ["A mosaic virus is a group of viral plant diseases parasitizing many agricultural crops. The spectrum of plants susceptible to the disease includes cucumbers, beans, potatoes, tomatoes, tobacco, wheat, elm, maple, apple, tulips, lilies, and others. All currently existing mosaic diseases are caused by various pathogens that have similar symptoms, such as mosaic-like coloration of plant organs, reduced productivity of photosynthesis, and stunted growth. The pathogens are transmitted in the sap of diseased plants. Some types of insects can be carriers. Mosaic viruses are transmitted with seeds and pollen and can remain in the soil and plant debris."],
+		"signs": "The variegated coloration (from green to yellow) of different shapes and sizes of the affected leaves, stems, and fruits that resembles a mosaic; The mosaic can be arranged randomly or form a certain pattern; it can be ordinary, veined, interveinal, striped, yellow, annular, or marbled;  shape of the leaf blade changes; The plant’s growth slows down notably; Deformation of flowers and fruits; Sometimes the disease is subtle, and gardeners mistake it for lack of nutrients or exposure to chemicals.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Alfalfa_mosaic_virus_min_c5298540d7.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 41,
+		"type": "diseases",
+		"name": ["Magnesium Deficiency in Plants"],
+		"description": ["Such a common problem as magnesium deficiency in plants usually results in the deterioration of growth and production processes and slows down the synthesis of nitrogen-containing compounds. As a result, the production of quality chlorophyll content and disease resistance decrease. Magnesium is absorbed only in the form of Mg2+ ions. It mainly accumulates in the organs and seeds of young plants. It is more mobile and can be reused by the plant. From the old leaves, it enters the young ones, and after flowering, flows from the leaves to the seeds, concentrating there. The lack of magnesium affects the yield of seeds, roots, and tubers more sharply than straw or chaff."],
+		"signs": "manifests itself in the form of a kind of interveinal chlorosis; the leaves become spotted (marbling), pale, and yellowish. begins with the edges of the lower leaves; later, brown spots appear between the veins on the leaf, while the veins remain green; with a strong deficiency of magnesium, the leaves die and fall, and the plant may not bear fruit; most often appear in the second half of the vegetation period.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_magnesium-deficiency-main_2ace14b8-c41c-4950-bcd4-5169d6d4126e.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 42,
+		"type": "diseases",
+		"name": ["Light-related issue"],
+		"description": ["Our beloved plants get energy from sunlight. Bright light for several hours daily is a must for most green friends. For some greenies, more shady areas are better, though. Usually, it’s not difficult to notice troubles with lighting, and the treatment isn’t complicated either."],
+		"signs": "Plant leaning towards light sources. Often plants tend to grow towards the light source.  Sparse growth. You’ll notice long stems with fewer leaves. Smaller leaves and no growth Soil not drying out Browning leaves",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Fsmall_light_related1_c6bb3dc754.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 43,
+		"type": "diseases",
+		"name": ["Leotiomycetes"],
+		"description": ["Leotiomycetes is a class of fungus that is inserted in the Ascomycota phylum and are widely known for being plant pathogens. Its most known members are powdery mildews, but it also includes other pathogens like necrotrophic fungal pathogens, which display contrasting infection strategies and range of hosts compared with powdery mildews. Gray molds are also part of this class. In general, the fungi in this class tend to grow on the surface of plants, making their presence somewhat easier to identify. They affect a wide range of hosts and seriously impact agricultural economics due to the destruction of crops."],
+		"signs": "Leaf damage. Leaves will often curl and display spots that eventually become covered in mold. This will force them to wilt and eventually collapse and fall. The underside of leaves will also show fungal growth, usually white. Chlorosis. Of leaves, but most importantly, chlorosis of flowers and buds, turning brown and dark. Rotting. Flowers, fruits, and buds will rot, causing a major impact on plants’ health and also the reproduction of that plant due to insufficient flowers for pollination and fruit production, leading to lower production of seeds. Stunted growth",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_rsz_powdery_mildew_9_1_min_3263705d0c.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 44,
+		"type": "diseases",
+		"name": ["Late blight"],
+		"description": ["Late Blight is the common designation for Phytophthora, a fungus-like microorganism. Usually associated with potato and tomato crops, it is broadly known for being one of the main reasons for the Irish Potato Famine. This water mold causes serious damage to crops and, if left unattended, can destroy entire plantations. It enjoys moist and cool environments and water-saturated conditions and can spread quickly in fields."],
+		"signs": "Spotting. Dark green spots will evolve to brown and then to black on stems and leaves. Wilting. Leaves are covered in large sections of brown, wilted foliage. White mold. A light layer of white mold with a powdery consistency will appear under the leaves. Decaying tubers. Infected tubers quickly decay and turn mushy and foul-smelling. Storage decay. Seemingly healthy tubers may decay after storage",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_lateblight_Tom_lesion3_min_bdba32e23e.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 45,
+		"type": "diseases",
+		"name": ["Lack of light"],
+		"description": ["The role of light in the life of indoor plants is enormous. Light strongly affects the growth and development of plants. A lack of sunlight can lead to the deterioration of the appearance and the death of the culture, so it is essential to understand in time that it lacks lighting"],
+		"signs": "The first sign of a lack of lighting is an elongated stem with a small number of leaves. The plant can lose its original appearance, the sign of which is a long single stem with leaves on top. Variegated types of plants lose their color if they are in a place that does not have the proper lighting. Stripes and contrasting edges disappear. They fade and blur with the general color. In flowering plants, under improper lighting, new buds and flowers will be smaller than the previous ones. By this sign, you can immediately understand that they need more lighting. The buds may take a long time to open or may not open; the flowers will be small, inconspicuous, pale, and quickly fall. Due to a lack of lighting, the old lower leaves turn yellow and quickly fall off. At the same time, the stem is stretched, and the flower is lengthened. Often, the plant signals poor lighting by becoming like a stick. Falling leaves",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_lack-of-light-main_30217e0f-1f78-4d60-b280-64f0b8535a9a.webp&w=640&q=75"
+	} 
+	,
+	{
+		"id": 46,
+		"type": "diseases",
+		"name": ["Iron Deficiency in Plants"],
+		"description": ["Iron deficiency is a problem that leads to the breakdown of growth phytohormones (auxins), which plants synthesize, slowing down plant growth. The most sensitive to iron deficiency are roses, apple trees, to a lesser extent, coniferous trees and shrubs, rhododendrons, blueberries, and lawn grasses. The lack of iron must be solved after planting the crop. Thus, it will be able to grow in a balanced and without restrictions on nutrition."],
+		"signs": "The plant growth slows down visibly. On large leaves, chlorosis appears between the veins, starting from the base of the leaf. In the future, necrosis progresses, and the leaves die off and fall off. Sharp, uniform fading of the leaf blade.  Sometimes, in the early stages, the veins remain green. Iron deficiency is especially evident in the second half of the season",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_iron-deficiency-main_2_41989895-5b7e-43e2-918f-0a7cc80f2a3c.webp&w=640&q=75"
+	}
+	,
+	{
+		"id": 47,
+		"type": "diseases",
+		"name": ["Yellow Spots on Leaves"],
+		"description": ["Also known as Tan Spot, this disease is caused by the necrotrophic fungus Pyrenophora tritici-repentis. It is host-specific, affecting cereals, particularly wheat, although it can sometimes cause damage to other species, such as barley. It requires moisture to carry with infection, especially leaves that are extensively exposed to moisture. It’s fast spreading and can grow to epidemic situations, making it almost impossible to control in such proportions. Symptomatology can be similar to other diseases and issues, such as nutrient deficiencies, herbicide damage, stress, etc"],
+		"signs": "Chlorosis. Leaves will turn yellow. Necrosis. Dead tissue, especially on leaves. Spotting. The appearance of groups of spots that can merge and create one large spot or harden into reddish-brown spots.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Drechslera_tritici_repentis_01_min_f2ea7897ce.webp&w=640&q=75"
+	}
+	,
+	{
+		"id": 48,
+		"type": "diseases",
+		"name": ["Impatiens necrotic spot virus"],
+		"description": ["Also known as INSV, this is a viral disease that infects more than 648 species of plants. Hosts are mainly ornamental plants, but some crops are also susceptible, and it has caused severe losses of thousands of dollars worth of crops, making it significantly relevant in the agricultural economy. It mainly affects greenhouse environments, and it's hard to control since symptoms alone are not enough to determine the issue, only that there is an issue with your plants. Diagnosis is made through chemical tests. This disease is closely associated with western flower thrips, as they serve as vectors for this virus' spread. When these insects are not present, This virus can only spread through the vegetative propagation of plants."],
+		"signs": "Wilting and curling leaves. Chlorosis. Leaves begin to turn yellow. Leaf spotting. Leaves will display spots similar to chickenpox. Ring spots. Necrosis. Necrotic spots and vein necrosis are the most significant symptoms.  Stem death. Poor flowering. Stunted growth.Some plants can be asymptomatic. They carry the virus but don't display any signs.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_impatienstswvbox195_029_min_66d8e07588.webp&w=640&q=75"
+	}
+	,
+	{
+		"id": 49,
+		"type": "diseases",
+		"name": ["Hosta virus x"],
+		"description": ["Also known as HVX, this virus infects plants in the Hosta genus. Plants in this genus are native to Northeast Asia and are considered shade tolerant. Hosta virus x can now be found worldwide and has become an epidemic. When it first emerged, it wasn’t immediately recognized as a virus and a plant pathogen but as a range of new Hosta cultivars. This was due to the mutations it caused in Hostas, giving them interesting new features that made them highly sought after, allowing the virus to spread freely. This virus primarily spreads through infected sap, so propagation by cuttings and cross-contamination in nurseries led to it becoming an epidemic"],
+		"signs": "Discoloration or darker tints in certain areas due to ink-bleed around the veins. Wilting and necrosis of leaves. Collapsed tissue. This makes the leaves look empty and flat.   Blotchiness. Ringspot. Mottling. Irregular striping and spotting in foliage. Asymptomatic. Some plants will lose symptoms from one year to the other, but they should still be considered infected.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Hosta_leaf_with_mottling_symptoms_min_e99271eeb4.webp&w=640&q=75"
+	}
+	,
+	{
+		"id": 50,
+		"type": "diseases",
+		"name": ["Herbicide damage"],
+		"description": ["Herbicides are pesticides specifically designed for weed control. Pesticide damage is hard to diagnose since it requires a laboratory test for validation, and each herbicide requires a specific test. Despite this, some symptoms can indicate the presence of the herbicide. Still, they tend to be similar to other diseases, so these other options must be ruled out before assuming herbicide damage"],
+		"signs": "Leaf damage. Leaves can display various signs, from curling and cupped leaves to chlorosis that makes leaves discolored and dead spots. Leaves can also have their texture altered and develop into abnormal shapes.Flattened stems. Corkscrew and twisting stems. Necrosis. Stunted growth",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_24_Da_min_98e64234d3.webp&w=640&q=75"
+	}
+	,
+	{
+		"id": 51,
+		"type": "diseases",
+		"name": ["Gammaproteobacteria"],
+		"description": ["This bacteria class holds more than 20 genera. And not all of them are completely harmful, but it will be hard to describe all of them, so we focus on the most important. Citrus Canker is caused by Xanthomonas axonopodis pv., and Pseudomonas syringae is caused by other gammaproteobacteria. Mentioned pathogens affect the plant’s appearance; they enter the plant through holes and wounds mostly. Their activity is shown in the suppression of the plant’s immunity. As a result, we can see how plants lose their vigor"],
+		"signs": "General weakening. As with any other disease, it can be spotted when you notice that a plant becomes weaker.Deformation of the branches. Suppression of immunity doesn’t let a plant grow healthy, affecting the formation of the branches and their further development.Brown spots on the leaves. Due to disease, it can’t get needed nutrients, and it affects the foliage’s look.Black spots on the fruits. The whole tree is affected, including the fruit.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_Citrus_canker_min_bdd09c5d9b.webp&w=640&q=75"
+	}
+	,
+	{
+		"id": 52,
+		"type": "diseases",
+		"name": ["Fungal Diseases in Plants"],
+		"description": ["Fungal diseases are responsible for a large range of plant diseases and constitute the largest number of pathogens that affect plants. Hard to control, the fungus can spread easily by wind and water and the movement of contaminated materials in the environment. They can cause great devastation and the destruction of entire crops."],
+		"signs": "Stress. They damage plants by killing cells and inducing stress.Leaf rust. A trail of rust-like powder will spread across the leaf, causing its wilting and death. Usually, attack plants in wet and humid conditions.Stem rust. Usually affects grain plants like wheat and barley.White mold. Yellowing of leaves that develops into dried leaves and ultimately death.Powdery mildew. It resembles a light, white, or grey powdery substance that deposits in spots across leaves.  Yellowing leaves and brown spots",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_fungal3_d163f3b9fe.webp&w=640&q=75"
+	}
+	,
+	{
+		"id": 52,
+		"type": "diseases",
+		"name": ["Fire Blight Treatment"],
+		"description": ["Fire Blight is caused by the bacterium Erwinia amylovora and is believed to be native to North America, and then spread across the world, except Australia, where it doesn't seem to be present. Fire blight gets its name due to the scorched look it gives plants. This bacteria spreads between cells and across tissue, darkening and killing everything on its way, and it's a highly contagious disease. It tends to affect ornamental plants and agricultural crops, mainly fruit-bearing trees such as apples and raspberries, but pears are the ones most susceptible to it. In optimal conditions, fire blight can decimate entire orchards, and it can also affect species in the Rosaceae family."],
+		"signs": "Sudden darkening. The bacteria will darken tissue and kill it while spreading.Water soaking. Blossoms become dull, and petals will start to fall. This will eventually happen to branches as well. Withering look. Blossoms, fruits, leaves, and other above-the-ground parts of the plant begin to die.The dark spots begin to get sharp and cracked margins.",
+		"img" :"https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Fmedium_fireblight_NW_9838rc_3_min_2094ba4742.webp&w=640&q=75"
+	}
+]

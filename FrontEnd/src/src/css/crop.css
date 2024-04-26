@@ -1,0 +1,8 @@
+.crop {
+  background: url(https://plant-disease-detection-346209.web.app/assets/coverImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 900px;
+}

@@ -1,0 +1,47 @@
+.plant-details {
+  padding-top: 120px;
+  background: url(https://blossomplant.com/assets/images/bg_pl_block_1_desk@2x.jpg)
+    #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -150px 0px;
+}
+.plant-details img {
+  width: 400px;
+  border-radius: 40px;
+  padding-left: 20px;
+}
+.plant-details .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.plant-details .text-descrip {
+  padding-left: 20px;
+  padding-right: 80px;
+}
+.plant-details .text-descrip h2 {
+  padding-left: 2px;
+}
+.plant-details .text-descrip p {
+  margin-top: 20px;
+  font-weight: 400;
+  color: var(--gray);
+  line-height: 1.6;
+}
+.signs {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.signs h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.signs p {
+  color: var(--gray);
+  line-height: 1.5;
+  padding-left: 50px;
+  padding-right: 50px;
+}
