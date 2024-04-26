@@ -13,8 +13,7 @@ from models.user import create_connection
 def get_plants_by_name(final_class):
     conn = create_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM plants WHERE plantName LIKE ?",
-                   ('%' + final_class.split(" ")[0] + '%',))
+    cursor.execute("SELECT * FROM plants WHERE plantName LIKE ?", ('%' + final_class.split(" ")[0] + '%',))
     data = cursor.fetchone()
     information = None
     if data:
@@ -58,30 +57,23 @@ def classify_image():
             return jsonify({'message': 'No file selected for uploading'}), 400
         plantPath = upload_file('file', 'plants')
         filename = secure_filename(file.filename)
-
-        if (is_plant('public/plants/' + filename)):
-            final_class, confidence = model_data(filename)
-            all_products = get_products(final_class)
-            information = get_plants_by_name(final_class)
-            return jsonify(
-                {
-                    "status": True,
-                    "message": "success",
-                    "data":
-                        {
-                            'predictions': final_class,
-                            "confidence": confidence,
-                            "image": plantPath,
-                            "products": all_products,
-                            "information": information
-                        }
-                }), 200
-        else:
-            return jsonify({
-                "status": False,
-                'message': 'This is not a plant',
-                'data': None
-            }), 400
+        
+        final_class, confidence = model_data(filename)
+        all_products = get_products(final_class)
+        information = get_plants_by_name(final_class)
+        return jsonify(
+            {                    "status": True,
+                "message": "success",
+                "data":
+                    {
+                        'predictions': final_class,
+                        "confidence": confidence,
+                        "image": plantPath,
+                        "products": all_products,
+                        "information": information
+                    }
+            }), 200
+        
     except Exception as e:
         return jsonify({
             "status": False,
