@@ -47,5 +47,8 @@ Agri-tech360 offers a comprehensive solution to address the challenges identifie
 •	provide personalized guidance on plant care, disease management, and agricultural best practices.
 
 
-![alt text](image.png)
+![alt text](Use_Case.png)
 <span>Use case Diagram</span>
+
+![alt text](Work_Flow.png)
+<span>Workflow Diagram</span>
