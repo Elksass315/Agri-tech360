@@ -1,20 +1,25 @@
-.slider {
+/* LineSlider.css */
+
+.line-slider {
   position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 0px auto;
+  overflow: hidden;
+  width: 400px;
+}
+
+.slider-container {
+  display: flex;
   overflow: hidden;
 }
 
-.slide {
-  display: none;
-  width: 100%;
+.slides {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
 }
 
-.slide img {
-  width: 400px;
-  height: auto;
+.slide {
+  flex: 0 0 100%;
 }
-.slide.active {
-  display: block;
+
+.line-slider img {
+  width: 350px;
 }

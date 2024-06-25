@@ -6,28 +6,38 @@
   z-index: 999;
 }
 .chat-button img {
-  width: 40px;
-  padding-top: 5px;
+  width: 55px;
 }
 .chat-button {
-  background-color: #4caf4f97;
+  background-color: #4caf4f5f;
   border: none;
-  border-radius: 5px;
+  border-radius: 46px 46px 0 46px;
   cursor: pointer;
+  animation: chatbotanimated infinite 3s;
 }
-
+@keyframes chatbotanimated {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .chat-window {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 350px;
+  width: 420px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #fff;
 }
 
 .chat-header {
-  background: linear-gradient(90deg, #ebb461, #fa8966);
+  background: linear-gradient(90deg, #63b68e, #2c6455d0);
   border-radius: 8px 8px 0 0;
   color: white;
   padding: 8px;
@@ -70,19 +80,20 @@
   color: var(--white);
   border-radius: 80px 100px 0px 80px;
   margin-top: 10px;
-  width: 60%;
+  /* max-width: fit-content; */
+  width: 70%;
   position: relative;
-  right: -70px;
+  right: -95px;
   margin-bottom: 20px;
   font-size: 13px;
-  padding: 26px;
-  height: fit-content;
+  padding: 15px 12px 15px 15px;
+  /* height: fit-content; */
 }
 
 .input-form {
   display: flex;
   padding: 10px;
-  width: 85%;
+  width: 80%;
 }
 
 .input-form input {
@@ -98,7 +109,7 @@
 
 .input-form button {
   position: absolute;
-  right: -7px;
+  right: -4px;
   bottom: 1px;
   border: none;
   border-radius: 5px;

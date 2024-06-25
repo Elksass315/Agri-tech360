@@ -3,30 +3,30 @@ import framvideo1 from "../asests/farmer-app-screen-1.mp3";
 import framvideo2 from "../asests/farmer-app-screen-3.mp3";
 import framvideo3 from "../asests/farmer-app-screen-4.mp3";
 import arrowsvg from "../asests/arrow.svg";
+import pic1 from "../asests/Picture1.png";
+import pic2 from "../asests/Picture2.png";
+import pic3 from "../asests/Picture3.png";
+import pic4 from "../asests/Picture4.png";
+import feat1 from "../asests/feat1.png";
+import feat2 from "../asests/feat2.png";
+import feat3 from "../asests/feat3.png";
+import feat4 from "../asests/feat4.png";
+
 import "../css/home.css";
 import Faqs from "./Faqs";
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
-import Identify from "../components/Identify";
+import Identify from "./Identify";
 import Featuress from "./Features";
 import ChatBot from "./ChatBot";
 import Navbar from "./Navbar";
 function Home() {
-  const images = [
-    "https://blossomplant.com/assets/images/img_disease_3-1.webp",
-    "https://blossomplant.com/assets/images/img_disease_3-3.webp",
-    "	https://blossomplant.com/assets/images/img_disease_3-5.webp",
-  ];
-  const featureimages = [
-    "https://blossomplant.com/assets/images/img_pl_5-1.webp",
-    "	https://blossomplant.com/assets/images/img_disease_6-2.webp",
-    "	https://blossomplant.com/assets/images/img_pl_5-3.webp",
-    "https://blossomplant.com/assets/images/img_pl_5-5.webp",
-    "	https://blossomplant.com/assets/images/img_pl_5-6.webp",
-  ];
+  const images = [pic1, pic2, pic3, pic4];
+
+  const featureimages = [feat1, feat2, feat3, feat4, pic3];
   return (
     <>
-    <Navbar isActive="home"/>
+      <Navbar isActive="home" />
       <div className="home">
         <div className="header">
           <div className="video-header-section">
@@ -34,14 +34,13 @@ function Home() {
               <source src={video}></source>
             </video>
           </div>
+
           <div className="header-text" data-aos="fade-up">
-            <h2>
-              Our Earth is <span>Precious</span>
-            </h2>
+            <h2>Our Earth is Precious</h2>
             <p>
               Agri-tech360 focuses on using advanced image recognition to
-              swiftly and accurately detect leaf plant diseases for agricultural
-              improvement.
+              swiftly and accurately detect leaf plant diseases and suggest next
+              crop for agricultural improvement.
             </p>
           </div>
           <button data-aos="fade-left">
@@ -87,11 +86,14 @@ function Home() {
               </p>
             </div>
             <div className="additional-images">
-              <div className="overlay">
-                <br></br>
-                <br></br>
-                start dignose!
-              </div>
+              <Link to="/Application">
+                <div className="overlay">
+                  <br></br>
+                  <br></br>
+                  start dignose!
+                </div>
+              </Link>
+
               <div className="overlay" data-aos="fade-right">
                 <img
                   src="https://blossomplant.com/assets/images/img_disease_2-1.webp"
@@ -127,13 +129,13 @@ function Home() {
                   <span>Agri-tech360</span> – the ultimate pocket companion for
                   plant enthusiasts! With <span>Agri-tech360's</span>{" "}
                   cutting-edge technology, you can now identify any plant with
-                  just a photo. Whether you're indoors admiring your houseplants
-                  or outdoors exploring new species, <span>Agri-tech360</span>{" "}
-                  will provide you with accurate information, including the
-                  plant's name and classification. Become your own botanical
-                  expert with <span>Agri-tech360</span> by your side wherever
-                  you roam, and delve into the captivating world of flora in
-                  real-time
+                  just a photo, Suggest next Crop , Ask Smart Ai Assistent About
+                  plants. Whether you're indoors admiring your houseplants or
+                  outdoors exploring new species, <span>Agri-tech360</span> will
+                  provide you with accurate information, including the plant's
+                  name and classification. Become your own botanical expert with{" "}
+                  <span>Agri-tech360</span> by your side wherever you roam, and
+                  delve into the captivating world of flora in real-time .
                 </h3>
                 <div className="about-videos">
                   <div
@@ -176,7 +178,7 @@ function Home() {
           {/* how identify */}
           <div className="how-identify">
             <h2 data-aos="zoom-out">
-              <span>How to identify </span>a diseases?
+              <span>How to Use </span>Agri-Tech360?
             </h2>
             <div className="identify-flex">
               <div className="identify-img">
@@ -213,12 +215,12 @@ function Home() {
                 <Featuress />
               </div>
               <div className="features-images" data-aos="fade-left">
-                <img
+                {/* <img
                   src="https://blossomplant.com/assets/images/img_pl_5-0.png"
                   alt="back-phone"
                   className="back-phone"
-                ></img>
-                <Slider images={featureimages} />
+                ></img> */}
+                <Slider images={featureimages} className={"feat-slider"} />
               </div>
             </div>
           </div>

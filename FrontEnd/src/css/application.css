@@ -1,18 +1,18 @@
 .application {
-  background: url(https://plant-disease-detection-346209.web.app/assets/coverImage.jpg);
+  background: url(../asests/cropback.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 675px;
+  height: 742.5px;
 }
 
 .text-application {
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: auto;
+  height: 360px;
   width: 600px;
   background: linear-gradient(
     125.56deg,
@@ -25,7 +25,6 @@
   border: 1px solid rgba(255, 255, 255, 0.125);
   text-align: center;
   padding-top: 50px;
-  position: absolute;
 }
 .text-application span {
   color: orange;
@@ -77,5 +76,31 @@
 }
 .selected-image img {
   width: 200px;
-  height: 250px;
+  height: 210px;
+  border-radius: 10px;
+}
+.result-box {
+  color: #fff;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background: rgba(24, 26, 27, 0.918);
+  border-radius: 24px;
+  backdrop-filter: blur(80px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 24px -1px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  text-align: center;
+  transform: translateY(35px);
+}
+
+.result-box h2 {
+  color: #fff;
+}
+
+.result-box p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.result-box span {
+  text-align: start;
 }

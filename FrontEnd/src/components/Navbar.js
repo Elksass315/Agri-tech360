@@ -23,21 +23,49 @@ function Navbar(props) {
           <div className="links" data-aos="fade-left" data-aos-delay="700">
             <ul>
               <li>
-                <Link to="/" className={props.isActive==="home"?"home":""}>Home</Link>
+                <Link
+                  to="/"
+                  className={props.isActive === "home" ? "active" : ""}
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/about" className={props.isActive === "about" ? "home" : ""}>About</Link>
+                <Link
+                  to="/about"
+                  className={props.isActive === "about" ? "active" : ""}
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/application" className={props.isActive === "app" ? "home" : ""}>Application</Link>
+                <Link
+                  to="/application"
+                  className={props.isActive === "app" ? "active" : ""}
+                >
+                  Disease ID
+                </Link>
               </li>
               <li>
-                <Link to="/library" className={props.isActive === "library" ? "home" : ""}>Library</Link>
+                <Link
+                  to="/crop"
+                  className={props.isActive === "crop" ? "active" : ""}
+                >
+                  Crop ID
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/library"
+                  className={props.isActive === "library" ? "active" : ""}
+                >
+                  Library
+                </Link>
               </li>
             </ul>
           </div>
           <button>
-            <Link to="/application" >Try For Free</Link>
+            <Link to="/application">Try For Free</Link>
           </button>
         </div>
       </div>

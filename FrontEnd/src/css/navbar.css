@@ -1,8 +1,8 @@
 .nav-bar {
-  width: 60%;
+  width: 50%;
   position: fixed;
   top: 20px;
-  left: 20%;
+  left: 25%;
   z-index: 200;
   background: rgba(249, 255, 249, 0.368627451);
   -webkit-backdrop-filter: blur(5px);
@@ -28,7 +28,7 @@
   padding-right: 10px;
 }
 .nav-bar .links {
-  width: 50%;
+  width: 60%;
 }
 .nav-bar .links ul {
   display: flex;
@@ -46,7 +46,7 @@
   font-size: 20px;
   color: var(--orange);
 }
-.nav-bar .links ul .home {
+.nav-bar .links ul .active {
   color: var(--orange);
   font-size: 20px;
   font-weight: bolder;
@@ -55,7 +55,7 @@
   background: linear-gradient(90deg, #ebb461, #fa8966);
   box-shadow: 0 10px 30px rgba(250, 137, 102, 0.2);
   border-radius: 48px;
-  width: 160px;
+  width: 140px;
   height: 40px;
   display: flex;
   align-items: center;

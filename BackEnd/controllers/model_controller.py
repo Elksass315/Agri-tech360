@@ -14,7 +14,7 @@ def get_plants_by_name(final_class):
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM plants WHERE plantName LIKE ?",
-                   ('%' + final_class.split(" ")[0] + '%',))
+                ('%' + final_class.split(" ")[0] + '%',))
     data = cursor.fetchone()
     information = None
     if data:

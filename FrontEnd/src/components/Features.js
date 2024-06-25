@@ -9,33 +9,33 @@ import arrow from "../asests/arrow.png";
 function Features() {
   const FeatData = [
     {
-      question: "Care reminders",
-      answer:
-        "Set personalized reminders so you don’t forget to water, repot, and fertilize all of your green buddies",
-    },
-    {
       question: "Plant identification",
       answer:
-        "Discover 30,000+ greeneries, flowers, succulents, and trees in a snap.",
+        "Discover more greeneries, flowers, succulents, and trees in a snap.",
     },
     {
-      question: "Water calculator",
+      question: "Next Crop Suggestion",
       answer:
-        "Get watering tips based on your plant type and the size of a pot.",
+        "Utilize Agri-Tech360 to capture images of your soil and previous crops. Our advanced technology will analyze the data and recommend the optimal next crop for your agricultural needs",
     },
     {
-      question: "Gardening schedule",
+      question: "Plant information library",
       answer:
-        "Plan your seeding season with a personalized gardening calendar.",
+        "Agri-Tech360 offers an extensive library containing detailed information on a wide variety of plants. This comprehensive resource supports informed decision-making for your agricultural practices ",
     },
     {
-      question: "Weather alerts",
+      question: "Agri-Tech360 Smart Store",
       answer:
-        "Learn how to care for your green buddies in specific weather conditions.",
+        "Our AI system not only detects diseases but also recommends the most effective treatments.",
+    },
+    {
+      question: "AI Assistant",
+      answer:
+        "Discover how to care for your plants in specific conditions with our AI Assistant. Gain expert insights and guidance on plant care tailored to your needs",
     },
   ];
 
-  const feticon = [bell, crop, time, seed, sun];
+  const feticon = [crop, seed, time, bell, sun];
 
   const [answerView, setAnswerView] = useState({});
 

@@ -1,7 +1,7 @@
 // ChatBot.js
 import React, { useState } from "react";
 import "../css/chatbot.css";
-import plantrobo from "../asests/sun.png";
+import plantrobo from "../asests/robo.png";
 import send from "../asests/send.png";
 
 function ChatBot() {

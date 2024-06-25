@@ -4,7 +4,7 @@
 .home .video-header-section {
   width: 100%;
   overflow: hidden;
-  height: 680px;
+  height: 750px;
   position: relative;
 }
 .home .video-header-section::after {
@@ -29,12 +29,12 @@
 .header-text {
   position: absolute;
   top: 40%;
-  left: 2%;
+  left: 5%;
   z-index: 1;
   text-align: center;
 }
 .header-text h2 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bolder;
   color: orange;
 }
@@ -48,17 +48,6 @@
   transform: translateX(50%);
   font-size: 20px;
 }
-@keyframes homwtextlight {
-  0% {
-    color: var(--light-green);
-  }
-  50% {
-    color: var(--white);
-  }
-  100% {
-    color: var(--light-green);
-  }
-}
 .home button {
   background: linear-gradient(90deg, #ebb461, #fa8966);
   box-shadow: 0 10px 30px rgba(250, 137, 102, 0.2);
@@ -70,8 +59,8 @@
   justify-content: center;
   border: none;
   position: absolute;
-  top: 70%;
-  left: 44%;
+  top: 63%;
+  left: 45%;
   transform: translate(-50%, -70%);
   z-index: 1;
 }
@@ -114,6 +103,7 @@
 .hero-section .hero-text h2 {
   font-size: 40px;
   color: var(--dark-green);
+  text-align: center;
 }
 
 .hero-section .hero-text p {
@@ -121,7 +111,7 @@
   color: var(--dark-green);
   text-align: center;
   width: 70%;
-  transform: translateX(60px);
+  transform: translateX(70px);
 }
 .hero-section .hero-text p span {
   color: var(--orange);
@@ -461,17 +451,15 @@
   width: 70%;
   margin-top: 20px;
 }
-.features .container .features-images img {
-  width: 230px;
-  border-radius: 20px;
-  position: relative;
-}
-.features .container .features-images .back-phone {
+/* .features .container .features-images {
+  z-index: 2;
+} */
+/* .features .container .features-images .back-phone {
   width: 420px;
   position: absolute;
   right: -95px;
   top: -10px;
-}
+} */
 .answer-hidden {
   max-height: 0;
   opacity: 0;
@@ -484,6 +472,9 @@
   margin-top: -10px;
   padding-bottom: 5px;
   transition: max-height 0.4s ease-in, opacity 0.4s ease-in;
+}
+.features .features-images .feat-slider {
+  width: 350px;
 }
 /* ------------------------- */
 /* Faqs */
