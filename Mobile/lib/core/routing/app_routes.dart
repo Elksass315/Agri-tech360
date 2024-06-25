@@ -17,16 +17,16 @@ import 'package:smartsoil/Feature/layout/presentation/views/layout_views.dart';
 import 'package:smartsoil/Feature/onbording/logic/cubit/onbording_cubit.dart';
 import 'package:smartsoil/Feature/onbording/presentation/on_boarding_view.dart';
 import 'package:smartsoil/Feature/profile/presentation/widgets/favorite_content.dart';
+import 'package:smartsoil/Feature/profile/presentation/widgets/policies_privets_view.dart';
 import 'package:smartsoil/Feature/profile/presentation/widgets/recntly_viewed_content.dart';
 import 'package:smartsoil/Feature/recommendNextCrop/logic/recommend_next_crop_cubit.dart';
-import 'package:smartsoil/Feature/recommendNextCrop/presentation/views/recommed_next_plant.dart';
-import 'package:smartsoil/Feature/search/presentation/views/search_store_view.dart';
+import 'package:smartsoil/Feature/recommendNextCrop/presenation/views/recommed_next_plant.dart';
 import 'package:smartsoil/Feature/store/data/models/store_product_model.dart';
-import 'package:smartsoil/core/Di/service_locator.dart';
 import 'package:smartsoil/core/helper/helper_const.dart';
 import 'package:smartsoil/core/models/planr_model_class.dart';
 import 'package:smartsoil/core/routing/routes.dart';
 import 'package:smartsoil/core/themaing/app_styles.dart';
+import 'package:smartsoil/service_locator.dart';
 
 class AppRoutes {
   static Route<dynamic>? onGenerateRoute(RouteSettings routeSettings) {
@@ -91,10 +91,7 @@ class AppRoutes {
             return const FavoriteContent();
           },
         );
-      case Routes.searchStoreViewRoute:
-        return MaterialPageRoute(
-          builder: (context) => const SearchStoreView(),
-        );
+     
       case Routes.recentlyViewedContent:
         return MaterialPageRoute(
           builder: (context) => const RecntlyViewedContent(),
@@ -149,6 +146,10 @@ class AppRoutes {
             create: (context) => AiChatCubit(),
             child: const ChatView(),
           );
+        });
+      case Routes.policiesAndPrivacyRoute:
+        return MaterialPageRoute(builder: (context) {
+          return const PoliciesAndPrivacy();
         });
       default:
         return _unFoundRoute();

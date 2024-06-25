@@ -4,7 +4,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smartsoil/Feature/comments/data/models/comment_model.dart';
-import 'package:smartsoil/Feature/comments/domain/repositories/comment_repo.dart';
+import 'package:smartsoil/Feature/comments/data/repositories/comment_repo.dart';
 
 part 'comment_state.dart';
 

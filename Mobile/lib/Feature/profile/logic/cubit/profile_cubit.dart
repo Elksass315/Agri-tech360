@@ -1,8 +1,10 @@
+
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smartsoil/Feature/auth/data/login/models/user_model.dart';
-import 'package:smartsoil/Feature/profile/domain/repositories/profile_repo.dart';
+import 'package:smartsoil/Feature/profile/data/repositories/profile_repo.dart';
+
 
 part 'profile_state.dart';
 
@@ -10,7 +12,7 @@ class ProfileCubit extends Cubit<ProfileState> {
   ProfileCubit({required this.profileRepo}) : super(ProfileInitial());
   final ProfileRepo profileRepo;
 
-  UserModel ?userModel;
+  UserModel? userModel;
   void getProfileData() async {
     {
       final profileEither = await profileRepo.getProfileData();
@@ -94,4 +96,7 @@ class ProfileCubit extends Cubit<ProfileState> {
   TextEditingController oldpasswordController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   TextEditingController confirmpasswordController = TextEditingController();
+
+
+  
 }

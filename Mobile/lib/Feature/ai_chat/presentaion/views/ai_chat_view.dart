@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:smartsoil/Feature/ai_chat/data/models/ai_chat_model.dart';
 import 'package:smartsoil/core/networking/api_services.dart';
 import 'package:smartsoil/core/networking/end_boint.dart';
-import 'package:smartsoil/core/networking/local_services.dart';
+import 'package:smartsoil/core/helper/local_services.dart';
 import 'package:smartsoil/core/themaing/app_colors.dart';
 
 class ChatView extends StatefulWidget {

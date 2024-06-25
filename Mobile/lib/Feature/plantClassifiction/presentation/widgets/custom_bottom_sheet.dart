@@ -7,6 +7,7 @@ import 'package:smartsoil/Feature/plantClassifiction/logic/cubit/plant_classfict
 import 'package:smartsoil/core/helper/naviagtion_extentaions.dart';
 import 'package:smartsoil/core/helper/spacing.dart';
 import 'package:smartsoil/core/themaing/app_colors.dart';
+import 'package:smartsoil/core/themaing/app_styles.dart';
 import 'package:smartsoil/core/widgets/app_bottom.dart';
 
 class CustomBottomSheet extends StatelessWidget {
@@ -29,9 +30,16 @@ class CustomBottomSheet extends StatelessWidget {
             topRight: Radius.circular(32),
           )),
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 32.h),
+        padding: EdgeInsets.symmetric(vertical: 8.h),
         child: Column(
           children: [
+            Text(
+              'Upload Image from',
+              style: AppStyle.font16Blackmedium.copyWith(
+                fontFamily: 'Poppins',
+              ),
+            ),
+            verticalSpacing(20),
             Expanded(
               child: CustomBottom(
                 bottomWidth: 330.w,
@@ -61,6 +69,7 @@ class CustomBottomSheet extends StatelessWidget {
                 backgroundColor: ColorManger.primaryColor,
               ),
             ),
+            verticalSpacing(20),
           ],
         ),
       ),

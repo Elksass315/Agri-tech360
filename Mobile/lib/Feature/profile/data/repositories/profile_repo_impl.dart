@@ -1,20 +1,27 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:smartsoil/Feature/auth/data/login/models/user_model.dart';
-import 'package:smartsoil/Feature/profile/data/datasources/profile_data_sources.dart';
-import 'package:smartsoil/Feature/profile/domain/repositories/profile_repo.dart';
+import 'package:smartsoil/Feature/profile/data/repositories/profile_repo.dart';
 import 'package:smartsoil/core/error/failuer.dart';
 import 'package:smartsoil/core/error/servier_failure.dart';
+import 'package:smartsoil/core/helper/local_services.dart';
+import 'package:smartsoil/core/networking/api_services.dart';
+import 'package:smartsoil/core/networking/end_boint.dart';
 
 class ProfileRepoImpl implements ProfileRepo {
-  final ProfileDataSources profileDataSources;
 
-  ProfileRepoImpl({required this.profileDataSources});
+  ProfileRepoImpl();
   @override
   Future<Either<Failure, UserModel>> getProfileData() async {
     try {
-      final response = await profileDataSources.getUserData();
-      return right(response);
+  String token = LocalServices.getData(key: 'token');
+    var response = await ApiServices.getData(
+      endpoint: userDataendpoint,
+      token: token,
+    );
+    UserModel user = UserModel.fromJson(response);
+
+    return right(user);
     } catch (e) {
       if (e is DioException) {
         return Left(ServerFailure.fromDioException(e));
@@ -30,12 +37,22 @@ class ProfileRepoImpl implements ProfileRepo {
     required String phoneNumber,
   }) async {
     try {
-      final response = await profileDataSources.updateProfile(
-        city: city,
-        fullName: fullName,
-        phoneNumber: phoneNumber,
-      );
-      return right(response);
+     String token = LocalServices.getData(key: 'token');
+
+    FormData formData = FormData.fromMap({
+      'fullName': fullName,
+      'city': city,
+      'phoneNumber': phoneNumber,
+    });
+
+    var response = await ApiServices.put(
+      url: updateuserdataendpoint,
+      token: token,
+      body: formData,
+    );
+    UserModel user = UserModel.fromJson(response.data);
+
+      return right(user);
     } catch (e) {
       if (e is DioException) {
         return Left(ServerFailure.fromDioException(e));
@@ -50,10 +67,18 @@ class ProfileRepoImpl implements ProfileRepo {
     required String oldpassword,
   }) async {
     try {
-      await profileDataSources.changePassword(
-        oldpassword: oldpassword,
-        password: password,
-      );
+       String token = LocalServices.getData(key: 'token');
+
+    FormData formData = FormData.fromMap({
+      'old_password': oldpassword,
+      'new_password': password,
+    });
+
+    await ApiServices.put(
+      url: updatepasswordendpoint,
+      token: token,
+      body: formData,
+    );
       return right(null);
     } catch (e) {
       if (e is DioException) {

@@ -9,7 +9,9 @@ import 'package:smartsoil/Feature/profile/presentation/widgets/general_profile_c
 import 'package:smartsoil/Feature/profile/presentation/widgets/log_out_botton.dart';
 import 'package:smartsoil/Feature/profile/presentation/widgets/profile_email_and_username.dart';
 import 'package:smartsoil/Feature/profile/presentation/widgets/update_profile_form.dart';
+import 'package:smartsoil/core/helper/naviagtion_extentaions.dart';
 import 'package:smartsoil/core/helper/spacing.dart';
+import 'package:smartsoil/core/routing/routes.dart';
 import 'package:smartsoil/core/themaing/app_colors.dart';
 import 'package:smartsoil/core/themaing/app_image_assets.dart';
 import 'package:smartsoil/core/themaing/app_styles.dart';
@@ -169,7 +171,14 @@ class _ProfileViewBodyState extends State<ProfileViewBody> {
                                     width: 30.w,
                                     height: 30.h,
                                   ),
-                                  trailing: const Icon(Icons.arrow_right),
+                                  trailing: GestureDetector(
+                                      onTap: () {
+                                        context.navigateTo(
+                                          routeName:
+                                              Routes.policiesAndPrivacyRoute,
+                                        );
+                                      },
+                                      child: const Icon(Icons.arrow_right)),
                                 ),
                               ],
                             ),

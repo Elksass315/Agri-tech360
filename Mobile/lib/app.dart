@@ -8,8 +8,8 @@ import 'package:smartsoil/Feature/home/logic/cubit/home_cubit.dart';
 import 'package:smartsoil/Feature/layout/logic/cubit/layout_cubit.dart';
 import 'package:smartsoil/Feature/profile/logic/cubit/profile_cubit.dart';
 import 'package:smartsoil/Feature/store/logic/store_cubit.dart';
-import 'package:smartsoil/core/Di/service_locator.dart';
 import 'package:smartsoil/core/routing/app_routes.dart';
+import 'package:smartsoil/service_locator.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

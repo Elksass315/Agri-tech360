@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:smartsoil/Feature/plantClassifiction/data/models/classfiction_model.dart';
 import 'package:smartsoil/Feature/plantClassifiction/data/models/product_model.dart';
-import 'package:smartsoil/Feature/plantClassifiction/domain/repositories/plant_classfictaion_repo.dart';
+import 'package:smartsoil/Feature/plantClassifiction/data/repositories/plant_classfictaion_repo.dart';
 
 part 'plant_classfiction_state.dart';
 

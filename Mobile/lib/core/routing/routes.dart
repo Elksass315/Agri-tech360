@@ -21,4 +21,6 @@ class Routes {
   static const String favoriteContentViewRoute = '/favoriteContentView';
 
   static const String recentlyViewedContent = '/RecentlyViewedContent';
+    static const String policiesAndPrivacyRoute = '/PoliciesAndPrivacyRoute';
+
 }

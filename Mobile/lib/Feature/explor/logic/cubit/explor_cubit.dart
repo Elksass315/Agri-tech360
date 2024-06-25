@@ -1,9 +1,7 @@
-import 'dart:convert';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smartsoil/Feature/explor/data/models/explor_plant_models.dart';
-import 'package:smartsoil/Feature/explor/domain/repositories/explor_repo.dart';
+import 'package:smartsoil/Feature/explor/data/repositories/explor_repo.dart';
 part 'explor_state.dart';
 
 class ExplorCubit extends Cubit<ExplorState> {
@@ -13,49 +11,50 @@ class ExplorCubit extends Cubit<ExplorState> {
       BlocProvider.of<ExplorCubit>(context);
 
   List<PlantModle> plantsresult = <PlantModle>[];
-
-  Future<void> savePlantDataToLocal(List<PlantModle> plants) async {
-    final prefs = await SharedPreferences.getInstance();
-    final jsonData = plants.map((plant) => plant.toJson()).toList();
-    prefs.setString('plantsData', json.encode(jsonData));
+  Future<void> saveExplorDataToLocal(List<PlantModle> plants) async {
+    emit(SaveExplorDataToLocalLoadingState());
+    var response = await explorRepo.saveExplorToLocalDatabase(plants);
+    response.fold((failure) {
+      emit(SaveExplorDataToLocalErrorState(error: failure.errMessage));
+    }, (success) {
+      plantsresult = plants;
+      emit(SaveExplorDataToLocalSuccessState(plants: plantsresult));
+    });
   }
 
-  Future<List<PlantModle>> loadPlantsDataFromLocal() async {
-    final prefs = await SharedPreferences.getInstance();
-    final jsonString = prefs.getString('plantsData');
-    if (jsonString != null) {
-      final jsonData = json.decode(jsonString);
-      return jsonData
-          .map<PlantModle>((plant) => PlantModle.fromJson(plant))
-          .toList();
-    } else {
+  Future<List<PlantModle>> loadExplorDataFromLocal() async {
+    emit(LoadExplorDataToLocalLoadingState());
+    var response = await explorRepo.getExplorFormLocalDatabase();
+    return response.fold((failure) {
+      emit(LoadExplorDataToLocalErorrState(error: failure.errMessage));
       return [];
-    }
+    }, (plants) {
+      emit(LoadExplorDataToLocalSuccessState(plants: plants));
+      return plants;
+    });
   }
 
   Future<void> getPlants() async {
     emit(GetPlantDataLoadingState());
     try {
-      final localPlantData = await loadPlantsDataFromLocal();
-
-      if (localPlantData.isNotEmpty) {
-        plantsresult = localPlantData;
+      final localPlants = await loadExplorDataFromLocal();
+      if (localPlants.isNotEmpty) {
+        plantsresult = localPlants;
         emit(GetPlantDataSuccessState(plants: plantsresult));
       } else {
-        final plantEither = await explorRepo.getPlantsData();
-        plantEither.fold(
-          (failure) {
-            emit(GetPlantDataErrorState(errormassage: failure.errMessage));
-          },
-          (plant) async {
-            plantsresult = plant;
-            emit(GetPlantDataSuccessState(plants: plantsresult));
-            await savePlantDataToLocal(plant);
-          },
-        );
+        var response = await explorRepo.getPlantsData();
+        response.fold((failure) async {
+          emit(GetPlantDataErrorState(errormassage: failure.errMessage));
+        }, (plants) async {
+          plantsresult = plants;
+          await saveExplorDataToLocal(
+              plants);
+          emit(GetPlantDataSuccessState(plants: plants));
+        });
       }
     } catch (e) {
       emit(GetPlantDataErrorState(errormassage: e.toString()));
     }
   }
 }
+

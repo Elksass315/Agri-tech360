@@ -21,7 +21,8 @@ class ApiServices {
   }) async {
     // Set the headers for the request
     _dio?.options.headers = {
-      'Content-Type': 'multipart/form-data', // Use the correct content type for form data
+      'Content-Type':
+          'multipart/form-data', // Use the correct content type for form data
       'Authorization': 'Bearer $token',
       ...?headers,
     };
@@ -51,11 +52,12 @@ class ApiServices {
     return response.data;
   }
 
-  static Future<Map<String, dynamic>> postData(
-      {required String endpoint,
-      required Object? data,
-      String? token,
-      Options? options}) async {
+  static Future<Map<String, dynamic>> postData({
+    required String endpoint,
+    required Object? data,
+    String? token,
+    Options? options,
+  }) async {
     _dio?.options.headers = {
       'Authorization': 'Bearer $token',
       'Content-Type': 'application/json',

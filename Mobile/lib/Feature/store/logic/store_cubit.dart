@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:smartsoil/Feature/store/data/models/store_product_model.dart';
-import 'package:smartsoil/Feature/store/domain/repositories/store_repo.dart';
+import 'package:smartsoil/Feature/store/data/repositories/store_repo.dart';
 part 'store_state.dart';
 
 class StoreCubit extends Cubit<StoreState> {
@@ -70,10 +70,19 @@ class StoreCubit extends Cubit<StoreState> {
       (storeProductModel) async {
         emit(StoreAddProductSuccess());
         Navigator.pop(context);
+        clearController();
         await getProducts();
         emit(StoreGetProductsSuccess(products: productResult));
       },
     );
+  }
+
+  void clearController() {
+    productNameController.clear();
+    productPriceController.clear();
+    productDescriptionController.clear();
+    productTagsController.clear();
+    imageList.clear();
   }
 
   TextEditingController productNameController = TextEditingController();

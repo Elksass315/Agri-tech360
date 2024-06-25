@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smartsoil/Feature/favorites/data/models/favorites_models.dart';
-import 'package:smartsoil/Feature/favorites/domain/repositories/favorites_repo.dart';
+import 'package:smartsoil/Feature/favorites/data/repositories/favorites_repo.dart';
 import 'package:equatable/equatable.dart';
 part 'favorites_state.dart';
 

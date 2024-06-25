@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:smartsoil/Feature/plantClassifiction/presentation/widgets/plant_classfiction_view_body.dart';
+
 
 class PlantCareView extends StatelessWidget {
   const PlantCareView({Key? key}) : super(key: key);
@@ -12,3 +14,4 @@ class PlantCareView extends StatelessWidget {
     );
   }
 }
+

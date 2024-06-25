@@ -17,7 +17,7 @@
     </intent>
     </queries>
     <application
-        android:label="smartsoil"
+        android:label="Agri-tech360"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

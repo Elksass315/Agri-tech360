@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smartsoil/Feature/home/data/models/weather_model.dart';
-import 'package:smartsoil/Feature/home/domain/repositories/home_repo.dart';
+import 'package:smartsoil/Feature/home/data/repositories/home_repo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 part 'home_state.dart';
 

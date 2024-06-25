@@ -1,3 +1,6 @@
+
+
+
 import 'dart:io';
 
 import 'package:equatable/equatable.dart';
@@ -5,8 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:smartsoil/Feature/recommendNextCrop/data/models/next_crop_model.dart';
-import 'package:smartsoil/Feature/recommendNextCrop/domain/repositories/recommend_next_crop_repo.dart';
-
+import 'package:smartsoil/Feature/recommendNextCrop/data/repositories/recommend_next_crop_repo.dart';
 part 'recommend_next_crop_state.dart';
 
 class RecommendNextCropCubit extends Cubit<RecommendNextCropState> {

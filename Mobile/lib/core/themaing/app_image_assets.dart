@@ -27,10 +27,11 @@ class ImagesAssetsManger {
 
   static const favoritesImage = '$imagePath/favorites.png';
 
-
   static const recentImage = '$imagePath/recent.png';
 
+  static const privacyImage = '$imagePath/privacy.png';
 
-   static const  privacyImage = '$imagePath/privacy.png';
-  
+  static const githupIcon = '$imagePath/iconsgithub.png';
+  static const facebookIcon = '$imagePath/iconsfacebook.png';
+  static const linkdedInIcon = '$imagePath/icons-linkedin.png';
 }

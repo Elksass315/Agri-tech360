@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smartsoil/Feature/profile/presentation/widgets/Custom_list_tittle.dart';
+import 'package:smartsoil/Feature/profile/presentation/widgets/contact_devloper_bottom_sheet.dart';
 import 'package:smartsoil/core/helper/naviagtion_extentaions.dart';
 import 'package:smartsoil/core/helper/spacing.dart';
 import 'package:smartsoil/core/routing/routes.dart';
@@ -40,6 +41,26 @@ class GeneralProfileComponents extends StatelessWidget {
               onTap: () => {
                     context.navigateTo(
                       routeName: Routes.recentlyViewedContent,
+                    )
+                  },
+              child: const Icon(Icons.arrow_right)),
+        ),
+        CustomListTittle(
+          title: const Text('Contact developer'),
+          leading: Image.asset(
+            ImagesAssetsManger.recentImage,
+            width: 30.w,
+            height: 30.h,
+          ),
+          trailing: GestureDetector(
+              onTap: () => {
+                    showModalBottomSheet(
+                      backgroundColor: Colors.transparent,
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (context) {
+                        return const ContactDevloperBottomSheet();
+                      },
                     )
                   },
               child: const Icon(Icons.arrow_right)),
